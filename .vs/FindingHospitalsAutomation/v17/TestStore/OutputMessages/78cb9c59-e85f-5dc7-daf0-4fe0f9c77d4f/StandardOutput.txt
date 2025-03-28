@@ -1,0 +1,170 @@
+📝 Test Created: Filter top-rated 24x7 hospitals using parallel scraping
+[INFO] 🔍 Starting Scenario: Filter top-rated 24x7 hospitals using parallel scraping
+Given I navigate to the hospital results page from config
+2025-03-28 14:08:24.981 | INFO | Navigating to: https://www.practo.com/search/hospitals?results_type=hospital&q=[{"word":"hospital","autocompleted":true,"category":"type"}]&city=Bangalore
+-> done: HospitalScraperSteps.GivenINavigateToTheHospitalResultsPageFromConfig() (8.8s)
+[PASS] ✔️ Given: I navigate to the hospital results page from config
+When I extract and scrape the top 50 hospital links in parallel
+2025-03-28 14:08:33.789 | INFO | ⏳ Collecting top 50 hospital links...
+🔗 Collected: https://www.practo.com/bangalore/hospital/columbia-asia-hospital1-whitefield?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/manipal-hospital-yeshwanthpur?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/motherhood-hospital-indiranagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/chirag-hospital-bangalore-jp-nagar-2-phase?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/koshys-hospital-ramamurthy-nagar-2-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/apollo-spectra-hospitals-koramangala-5-block-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/motherhood-hospital-whitefield-3?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/apollo-cradle-4-marathahalli?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/specialist-hospital-kalyan-nagar-5?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/dr-malathi-manipal-hospital-jayanagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/apollo-hospital-jayanagar-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/aster-cmi-hospital-hebbal-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/sagar-hospitals-banashankari?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-hospital-old-airport-road?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/columbia-asia-hospital-hebbala-hebbal?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/the-eye-foundation-super-specialty-eye-hospital-bellandur?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/apollo-cradle-jayanagar-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/bgs-global-hospital-kengeri-6?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/apollo-hospital-bannerghatta-road-5?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-hospital-malleshwaram?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/tamara-hospital-and-ivf-centre-rajajinagar-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/manipal-hospital-old-airport-road-1-630200?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/vikram-hospital-millers-road?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/motherhood-hospital-sarjapur-road?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/dr-parthasarathi-s-asian-hair-skin-hospital-mgroad?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-whitefield-hospital-whitefield?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-center-bellandur?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/northside-manipal-hospital-malleswaram-2?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-hospital-jayanagar-jayanagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/green-city-hospital-jp-nagar-6-phase-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/motherhood-india-sahakaranagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/mind-brain-clinic-sahakaranagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/sparsh-hospital-yeshwanthpur-2?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/motherhood-hospital-hrbr-layout-hrbr-layout?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/sagar-hospital-tilaknagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/smiles-institute-of-gastroenterology-mathikere-bel-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-fertility-center-old-airport-road?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnineclinic-hrbr-layout?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/ayaansh-hospital-indiranagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cytecare-cancer-hospitals-yelahanka?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/people-tree-maarga-yelahanka?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-fertility-jp-nagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/sagar-chandramma-hospitals-vv-puram1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/sparsh-hospital-vasanthnagar?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/cloudnine-fertility-whitefield-whitefield?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/milann-ivf-jp-nagar-1-phase?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/apollo-hospitals-19-seshadripuram?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/shraddha-healthcare-nursing-koramangala-1-block-1?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/motherhood-hospital-banashankari?referrer=hospital_listing
+🔗 Collected: https://www.practo.com/bangalore/hospital/ssnmc-rajarajeshwarinagar?referrer=hospital_listing
+✅ Collected 50 hospital links.
+2025-03-28 14:09:28.390 | INFO | ✅ Collected 50 hospital links.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+✅ Matched: Cloudnine Fertility - IVF Centre, Old Airport Road, Old Airport Road, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Matched: Cloudnine Hospital - Whitefield, Whitefield, Bangalore: Practo
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Matched: Cloudnine Hospital - Old Airport Road, Old Airport Road, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Matched: Cloudnine Hospital, Bellandur, Bangalore: Practo
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Matched: Motherhood Hospital, Indiranagar, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Matched: Chirag Global Hospitals, JP Nagar 2 Phase, Bangalore: Practo
+✅ Matched: Cytecare Hospitals, Yelahanka, Bangalore: Practo
+✅ Matched: Manipal Hospital Malleshwaram, Malleswaram, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Matched: Cloudnine Hospital - Jayanagar, Jayanagar, Bangalore: Practo
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+✅ Matched: Cloudnine Fertility - IVF Centre, Jayanagar, Jayanagar, Bangalore: Practo
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Matched: Motherhood Hospital, Sahakaranagar, Bangalore: Practo
+⚠️ Hospital did not meet criteria.
+✅ Matched: Sagar Chandramma Hospitals, VV Puram, Bangalore: Practo
+✅ Matched: Motherhood Hospital, Whitefield, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Matched: Sparsh Hospital, Vasanthnagar, Bangalore: Practo
+✅ Matched: Mind & Brain Hospital, Sahakaranagar, Bangalore: Practo
+✅ Matched: Cloudnine Hospital, Malleswaram, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Matched: Apollo Cradle & Children’s Hospital, Whitefield, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Matched: SPARSH Hospital, Yeshwanthpur, Bangalore: Practo
+✅ Matched: Cloudnine Fertility - IVF Centre, Whitefield, Bangalore: Practo
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Matched: Motherhood Hospital, HRBR Layout, Bangalore: Practo
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+✅ Matched: Manipal Hospital, Millers Road ( Vikram Hospitals ), Millers Road, Bangalore: Practo
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+⚠️ Hospital did not meet criteria.
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Consent popup dismissed.
+✅ Matched: Motherhood Hospital, Sarjapur Road, Bangalore: Practo
+⚠️ Hospital did not meet criteria.
+✅ Consent popup dismissed.
+✅ Matched: Motherhood Hospital, Banashankari, Bangalore: Practo
+✅ Consent popup dismissed.
+✅ Matched: SS Sparsh Hospital, Rajarajeshwarinagar, Bangalore: Practo
+📁 CSV written to: C:\Users\2391612\OneDrive - Cognizant\Desktop\Training\FindingHospitalsAutomation\FindingHospitalsAutomation\bin\Debug\net8.0\HospitalResults.csv
+✅ Saved 24 hospitals to CSV.
+-> done: HospitalScraperSteps.WhenIExtractAndScrapeTheTopHospitalLinksInParallel(50) (405.2s)
+[PASS] ✔️ When: I extract and scrape the top 50 hospital links in parallel
+Then the valid hospital data should be saved to the CSV
+-> done: HospitalScraperSteps.ThenTheValidHospitalDataShouldBeSavedToTheCSV() (0.0s)
+[PASS] ✔️ Then: the valid hospital data should be saved to the CSV
+2025-03-28 14:15:18.977 | INFO | 🧹 Closing browser after scenario...
+[INFO] 🧹 Closing browser after scenario...
+📁 Report saved to: C:\Users\2391612\OneDrive - Cognizant\Desktop\Training\FindingHospitalsAutomation\FindingHospitalsAutomation\bin\Debug\net8.0\Reports\ExtentReport_20250328_140814.html

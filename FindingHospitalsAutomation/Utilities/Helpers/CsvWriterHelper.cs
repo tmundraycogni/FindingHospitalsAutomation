@@ -1,34 +1,28 @@
-﻿using System.Globalization;
+﻿using FindingHospitalsAutomation.Models;
 using System.Text;
-using FindingHospitalsAutomation.Models;
 
-namespace FindingHospitalsAutomation.Utilities.Csv
+namespace FindingHospitalsAutomation.Utilities
 {
     public static class CsvWriterHelper
     {
-        public static void WriteHospitalsToCsv(List<HospitalInfo> hospitals)
+        private static readonly string OutputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "HospitalResults.csv");
+
+        public static void WriteToCsv(List<HospitalInfo> hospitals)
         {
-            string filePath = "HospitalResults.csv";
+            var sb = new StringBuilder();
 
-            using (StreamWriter writer = new StreamWriter(filePath, false, Encoding.UTF8))
+            foreach (var hospital in hospitals)
             {
-                writer.WriteLine("Name,Rating,Open 24x7,Parking,Location");
-
-                foreach (var hospital in hospitals)
-                {
-                    string line = string.Format(CultureInfo.InvariantCulture,
-                        "\"{0}\",{1},{2},{3},\"{4}\"",
-                        hospital.Name,
-                        hospital.Rating,
-                        hospital.IsOpen24x7 ? "Yes" : "No",
-                        hospital.HasParking ? "Yes" : "No",
-                        hospital.Location.Replace(",", " ")
-                    );
-                    writer.WriteLine(line);
-                }
+                sb.AppendLine($"Hospital Name: {hospital.Name}");
+                sb.AppendLine($"Rating: {hospital.Rating}");
+                sb.AppendLine($"Open 24x7: {(hospital.IsOpen24x7 ? "Yes" : "No")}");
+                sb.AppendLine($"Has Parking: {(hospital.HasParking ? "Yes" : "No")}");
+                sb.AppendLine($"Location: {hospital.Location}");
+                sb.AppendLine(); // Blank line for readability
             }
 
-            Console.WriteLine($"✅ CSV saved: {Path.GetFullPath(filePath)}");
+            File.WriteAllText(OutputPath, sb.ToString());
+            Console.WriteLine($"📁 CSV written to: {OutputPath}");
         }
     }
 }
