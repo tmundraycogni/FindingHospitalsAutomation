@@ -20,17 +20,17 @@ namespace FindingHospitalsAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Hospital Search")]
+    [NUnit.Framework.DescriptionAttribute("Search for hospitals in a specific city")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
-    public partial class HospitalSearchFeature
+    public partial class SearchForHospitalsInASpecificCityFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Hospital Search", "  As a user\r\n  I want to find hospitals in Bangalore\r\n  That are open 24x7 and ha" +
-                "ve a rating of 4.5 or more\r\n  So that I can choose a quality hospital", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Search for hospitals in a specific city", "  As a user\r\n  I want to search for hospitals in Bangalore\r\n  So that I can view " +
+                "available hospital options", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "SearchHospitals.feature"
 #line hidden
@@ -90,7 +90,7 @@ namespace FindingHospitalsAutomation.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Perform a hospital search via homepage", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 8
+#line 6
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -100,11 +100,14 @@ namespace FindingHospitalsAutomation.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 9
-  await testRunner.GivenAsync("I open the hospital search page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line 7
+    await testRunner.GivenAsync("I open the hospital search page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 10
-  await testRunner.ThenAsync("I should be taken to the hospital search results page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line 8
+    await testRunner.ThenAsync("I should be taken to the hospital search results page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
+#line 9
+    await testRunner.AndAsync("I should be navigated back to the homepage", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

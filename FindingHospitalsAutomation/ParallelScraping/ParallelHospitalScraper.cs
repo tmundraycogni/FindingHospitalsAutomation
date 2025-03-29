@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using FindingHospitalsAutomation.Models;
 using FindingHospitalsAutomation.Utilities;
+using FindingHospitalsAutomation.Utilities.Csv;
 
 namespace FindingHospitalsAutomation.ParallelScraping
 {
@@ -133,7 +134,7 @@ namespace FindingHospitalsAutomation.ParallelScraping
 
             if (results.Count > 0)
             {
-                CsvWriterHelper.WriteToCsv(results);
+                CsvWriterHelper.WriteHospitalsToCsv(results);
                 Console.WriteLine($"✅ Saved {results.Count} hospitals to CSV.");
             }
             else

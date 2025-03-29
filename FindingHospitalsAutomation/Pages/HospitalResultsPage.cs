@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using FindingHospitalsAutomation.Models;
 using SeleniumExtras.WaitHelpers;
 using FindingHospitalsAutomation.Utilities;
+using FindingHospitalsAutomation.Utilities.Csv;
 
 namespace FindingHospitalsAutomation.Pages
 {
@@ -69,7 +70,7 @@ namespace FindingHospitalsAutomation.Pages
             }
 
             // ✅ Corrected method name
-            CsvWriterHelper.WriteToCsv(hospitals);
+            CsvWriterHelper.WriteHospitalsToCsv(hospitals);
         }
 
         private void ScrollIntoView(IWebElement element)

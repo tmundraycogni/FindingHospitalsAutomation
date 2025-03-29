@@ -31,9 +31,6 @@ namespace FindingHospitalsAutomation.StepDefinitions
             hospitalPage.OpenHomePage();
             hospitalPage.SetLocation("Bangalore");
             hospitalPage.SetSearchTerm("Hospital");
-
-            var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "SearchPage");
-            ExtentReportHelper.AttachScreenshot("Search Result Page", screenshotBytes);
         }
 
         [Then(@"I should be taken to the hospital search results page")]
@@ -42,10 +39,16 @@ namespace FindingHospitalsAutomation.StepDefinitions
             ExtentReportHelper.LogInfo("Verifying that hospital results have loaded...");
             bool resultsVisible = hospitalPage.IsResultsPageLoaded();
 
+            var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "SearchPage");
+            ExtentReportHelper.AttachScreenshot("Search Result Page", screenshotBytes);
+
             if (resultsVisible)
             {
                 ExtentReportHelper.LogPass("Search results successfully loaded.");
                 Assert.That(resultsVisible, Is.True);
+
+                Log.Info("Navigating back to homepage after search...");
+                driver.Navigate().GoToUrl("https://www.practo.com/");
             }
             else
             {

@@ -1,28 +1,38 @@
 ﻿using FindingHospitalsAutomation.Models;
+using System.Globalization;
 using System.Text;
 
-namespace FindingHospitalsAutomation.Utilities
+namespace FindingHospitalsAutomation.Utilities.Csv
 {
     public static class CsvWriterHelper
     {
-        private static readonly string OutputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "HospitalResults.csv");
+        private static readonly string csvFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hospital_results.csv");
 
-        public static void WriteToCsv(List<HospitalInfo> hospitals)
+        public static void WriteHospitalsToCsv(List<HospitalInfo> hospitals)
         {
-            var sb = new StringBuilder();
+            var csv = new StringBuilder();
+            csv.AppendLine("Name,Rating,IsOpen24x7,HasParking,Location");
 
             foreach (var hospital in hospitals)
             {
-                sb.AppendLine($"Hospital Name: {hospital.Name}");
-                sb.AppendLine($"Rating: {hospital.Rating}");
-                sb.AppendLine($"Open 24x7: {(hospital.IsOpen24x7 ? "Yes" : "No")}");
-                sb.AppendLine($"Has Parking: {(hospital.HasParking ? "Yes" : "No")}");
-                sb.AppendLine($"Location: {hospital.Location}");
-                sb.AppendLine(); // Blank line for readability
+                var line = string.Format(CultureInfo.InvariantCulture,
+                    "\"{0}\",{1},{2},{3},\"{4}\"",
+                    hospital.Name.Replace("\"", "\"\""),
+                    hospital.Rating,
+                    hospital.IsOpen24x7,
+                    hospital.HasParking,
+                    hospital.Location.Replace("\"", "\"\"")
+                );
+
+                csv.AppendLine(line);
             }
 
-            File.WriteAllText(OutputPath, sb.ToString());
-            Console.WriteLine($"📁 CSV written to: {OutputPath}");
+            File.WriteAllText(csvFilePath, csv.ToString());
+        }
+
+        public static string GetCsvFilePath()
+        {
+            return csvFilePath;
         }
     }
 }
