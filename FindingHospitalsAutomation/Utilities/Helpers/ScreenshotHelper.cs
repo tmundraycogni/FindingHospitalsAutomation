@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.IO;
+using FindingHospitalsAutomation.Utilities.Reporting;
 
 namespace FindingHospitalsAutomation.Utilities.Screenshots
 {
@@ -27,6 +28,15 @@ namespace FindingHospitalsAutomation.Utilities.Screenshots
             {
                 Console.WriteLine($"❌ Screenshot failed: {ex.Message}");
                 return Array.Empty<byte>();
+            }
+        }
+
+        public static void CaptureAndAttach(IWebDriver driver, string namePrefix)
+        {
+            var bytes = CaptureScreenshotAsBytes(driver, namePrefix);
+            if (bytes.Length > 0)
+            {
+                ExtentReportHelper.AttachScreenshot(namePrefix, bytes);
             }
         }
     }
