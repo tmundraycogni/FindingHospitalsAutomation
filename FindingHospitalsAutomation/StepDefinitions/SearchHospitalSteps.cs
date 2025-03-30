@@ -31,6 +31,9 @@ namespace FindingHospitalsAutomation.StepDefinitions
             hospitalPage.OpenHomePage();
             hospitalPage.SetLocation("Bangalore");
             hospitalPage.SetSearchTerm("Hospital");
+
+            var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "SearchPage");
+            ExtentReportHelper.AttachScreenshot("Search Result Page", screenshotBytes);
         }
 
         [Then(@"I should be taken to the hospital search results page")]
@@ -39,22 +42,28 @@ namespace FindingHospitalsAutomation.StepDefinitions
             ExtentReportHelper.LogInfo("Verifying that hospital results have loaded...");
             bool resultsVisible = hospitalPage.IsResultsPageLoaded();
 
-            var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "SearchPage");
-            ExtentReportHelper.AttachScreenshot("Search Result Page", screenshotBytes);
-
             if (resultsVisible)
             {
                 ExtentReportHelper.LogPass("Search results successfully loaded.");
                 Assert.That(resultsVisible, Is.True);
-
-                Log.Info("Navigating back to homepage after search...");
-                driver.Navigate().GoToUrl("https://www.practo.com/");
             }
             else
             {
                 ExtentReportHelper.LogFail("Search results did not load correctly.");
                 Assert.That(resultsVisible, Is.True, "Search results page failed to load.");
             }
+        }
+
+        [Then(@"I should be navigated back to the homepage")]
+        public void ThenIShouldBeNavigatedBackToTheHomepage()
+        {
+            ExtentReportHelper.LogInfo("Navigating back to the homepage...");
+            Log.Info("Navigating back to the homepage...");
+
+            driver.Navigate().GoToUrl("https://www.practo.com");
+
+            Assert.That(driver.Url, Does.Contain("practo.com"), "Did not navigate back to homepage.");
+            ExtentReportHelper.LogPass("Successfully navigated back to the homepage.");
         }
     }
 }

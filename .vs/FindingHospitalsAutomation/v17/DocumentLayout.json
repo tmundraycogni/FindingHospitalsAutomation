@@ -3,6 +3,54 @@
   "WorkspaceRootPath": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\parallelscraping\\hospitalresultslinkcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\parallelscraping\\hospitalresultslinkcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\stepdefinitions\\hospitalscrapersteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\stepdefinitions\\hospitalscrapersteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\parallelscraping\\parallelhospitalscraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\parallelscraping\\parallelhospitalscraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\features\\scrapehospitalresults.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\features\\scrapehospitalresults.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\utilities\\logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\utilities\\logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\utilities\\helpers\\csvwriterhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\utilities\\helpers\\csvwriterhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\stepdefinitions\\searchhospitalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\stepdefinitions\\searchhospitalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\features\\searchhospitals.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\features\\searchhospitals.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\pages\\corporatewellnesspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\pages\\corporatewellnesspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\testdata\\corporatewellnesstestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\testdata\\corporatewellnesstestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\stepdefinitions\\corporatewellnesssteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\stepdefinitions\\corporatewellnesssteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\features\\corporatewellnessform.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\features\\corporatewellnessform.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\stepdefinitions\\diagnosticssteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\stepdefinitions\\diagnosticssteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,40 +67,8 @@
       "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\pages\\diagnosticspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\features\\searchhospitals.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\features\\searchhospitals.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\stepdefinitions\\searchhospitalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\stepdefinitions\\searchhospitalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\parallelscraping\\parallelhospitalscraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\parallelscraping\\parallelhospitalscraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\pages\\hospitalresultspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\pages\\hospitalresultspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\utilities\\helpers\\csvwriterhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\utilities\\helpers\\csvwriterhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\stepdefinitions\\hospitalscrapersteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\stepdefinitions\\hospitalscrapersteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\features\\scrapehospitalresults.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\features\\scrapehospitalresults.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\utilities\\logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\utilities\\logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\parallelscraping\\hospitalresultslinkcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|solutionrelative:findinghospitalsautomation\\parallelscraping\\hospitalresultslinkcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABFB3CF8-7944-4FA3-9535-81932D4A8B2F}|FindingHospitalsAutomation\\FindingHospitalsAutomation.csproj|c:\\users\\2391612\\onedrive - cognizant\\desktop\\training\\findinghospitalsautomation\\findinghospitalsautomation\\hospitalsearch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -102,11 +118,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SearchHospitals.feature",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-26T18:17:53.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SearchHospitalSteps.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAswEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T17:41:13.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CsvWriterHelper.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T10:57:45.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParallelHospitalScraper.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T10:20:29.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HospitalScraperSteps.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAewCsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:27:51.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:30:17.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HospitalResultsLinkCollector.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T10:12:16.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScrapeHospitalResults.feature",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-26T18:27:01.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CorporateWellnessPage.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Pages\\CorporateWellnessPage.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Pages\\CorporateWellnessPage.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Pages\\CorporateWellnessPage.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Pages\\CorporateWellnessPage.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T16:37:15.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CorporateWellnessTestData.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\TestData\\CorporateWellnessTestData.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\TestData\\CorporateWellnessTestData.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\TestData\\CorporateWellnessTestData.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\TestData\\CorporateWellnessTestData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:26:34.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CorporateWellnessSteps.cs",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\CorporateWellnessSteps.cs",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\StepDefinitions\\CorporateWellnessSteps.cs",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\CorporateWellnessSteps.cs",
+              "RelativeToolTip": "FindingHospitalsAutomation\\StepDefinitions\\CorporateWellnessSteps.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T16:43:03.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CorporateWellnessForm.feature",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\CorporateWellnessForm.feature",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\CorporateWellnessForm.feature",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\CorporateWellnessForm.feature",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\CorporateWellnessForm.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-29T16:31:38.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "DiagnosticsSteps.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\DiagnosticsSteps.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\StepDefinitions\\DiagnosticsSteps.cs",
@@ -119,20 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Diagnostics.feature",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\Diagnostics.feature",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\Diagnostics.feature",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\Diagnostics.feature",
-              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\Diagnostics.feature",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-03-29T15:38:15.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "DiagnosticsPage.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Pages\\DiagnosticsPage.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Pages\\DiagnosticsPage.cs",
@@ -140,60 +299,23 @@
               "RelativeToolTip": "FindingHospitalsAutomation\\Pages\\DiagnosticsPage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T15:32:44.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T15:32:44.316Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
-              "RelativeToolTip": "FindingHospitalsAutomation\\Utilities\\Logger\\Logger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:30:17.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HospitalScraperSteps.cs",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
-              "RelativeToolTip": "FindingHospitalsAutomation\\StepDefinitions\\HospitalScraperSteps.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAwEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T18:27:51.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ScrapeHospitalResults.feature",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
-              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\ScrapeHospitalResults.feature",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Diagnostics.feature",
+              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\Diagnostics.feature",
+              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\Diagnostics.feature",
+              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\Diagnostics.feature",
+              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\Diagnostics.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-03-26T18:27:01.234Z"
+              "WhenOpened": "2025-03-29T15:38:15.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CsvWriterHelper.cs",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
-              "RelativeToolTip": "FindingHospitalsAutomation\\Utilities\\Helpers\\CsvWriterHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:57:45.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "ScreenshotHelper.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Helpers\\ScreenshotHelper.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\Helpers\\ScreenshotHelper.cs",
@@ -201,24 +323,11 @@
               "RelativeToolTip": "FindingHospitalsAutomation\\Utilities\\Helpers\\ScreenshotHelper.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAswCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:57:19.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:57:19.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ParallelHospitalScraper.cs",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
-              "RelativeToolTip": "FindingHospitalsAutomation\\ParallelScraping\\ParallelHospitalScraper.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAvwI4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T10:20:29.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "HospitalResultsPage.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Pages\\HospitalResultsPage.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Pages\\HospitalResultsPage.cs",
@@ -230,44 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SearchHospitals.feature",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
-              "RelativeToolTip": "FindingHospitalsAutomation\\Features\\SearchHospitals.feature",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-03-26T18:17:53.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SearchHospitalSteps.cs",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
-              "RelativeToolTip": "FindingHospitalsAutomation\\StepDefinitions\\SearchHospitalSteps.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T17:41:13.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HospitalResultsLinkCollector.cs",
-              "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
-              "RelativeDocumentMoniker": "FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
-              "ToolTip": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
-              "RelativeToolTip": "FindingHospitalsAutomation\\ParallelScraping\\HospitalResultsLinkCollector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T10:12:16.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "hospitalSearch.json",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\hospitalSearch.json",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\hospitalSearch.json",
@@ -279,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "nlog.config",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\nlog.config",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\nlog.config",
@@ -291,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "ExtentReportHelper.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\Reports\\ExtentReportHelper.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\Reports\\ExtentReportHelper.cs",
@@ -303,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "HospitalIfo.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Models\\HospitalIfo.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Models\\HospitalIfo.cs",
@@ -315,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "WebDriverManager.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Drivers\\WebDriverManager.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Drivers\\WebDriverManager.cs",
@@ -327,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\appsettings.json",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\appsettings.json",
@@ -339,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "HospitalSearchPage.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Pages\\HospitalSearchPage.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Pages\\HospitalSearchPage.cs",
@@ -351,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "ImplicitUsings.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\ImplicitUsings.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\ImplicitUsings.cs",
@@ -363,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "TestBase.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Hooks\\TestBase.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Hooks\\TestBase.cs",
@@ -375,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "HospitalSearchDataReader.cs",
               "DocumentMoniker": "C:\\Users\\2391612\\OneDrive - Cognizant\\Desktop\\Training\\FindingHospitalsAutomation\\FindingHospitalsAutomation\\Utilities\\HospitalSearchDataReader.cs",
               "RelativeDocumentMoniker": "FindingHospitalsAutomation\\Utilities\\HospitalSearchDataReader.cs",

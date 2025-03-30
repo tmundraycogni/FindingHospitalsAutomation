@@ -1,13 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System.Collections.ObjectModel;
 using SeleniumExtras.WaitHelpers;
 
 namespace FindingHospitalsAutomation.ParallelScraping
 {
     public static class HospitalResultsLinkCollector
     {
-        private static By hospitalCards = By.CssSelector("div.c-estb-card");
+        private static readonly By hospitalCards = By.CssSelector("div.c-estb-card");
 
         public static List<string> CollectHospitalLinks(IWebDriver driver, int limit)
         {
@@ -15,49 +14,44 @@ namespace FindingHospitalsAutomation.ParallelScraping
             wait.Until(ExpectedConditions.ElementExists(hospitalCards));
 
             var links = new List<string>();
-            int processed = 0;
+            var seenUrls = new HashSet<string>();
 
-            while (processed < limit)
+            while (links.Count < limit)
             {
                 var cards = driver.FindElements(hospitalCards);
 
-                if (processed >= cards.Count)
+                foreach (var card in cards)
                 {
-                    Console.WriteLine("⚠️ No more hospitals to process.");
-                    break;
-                }
-
-                try
-                {
-                    var card = cards[processed];
-                    ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", card);
-                    Thread.Sleep(500);
-
-                    var linkElement = card.FindElement(By.CssSelector("a[target='_blank']"));
-                    string url = linkElement.GetAttribute("href");
-
-                    if (!string.IsNullOrEmpty(url))
+                    try
                     {
-                        links.Add(url);
-                        Console.WriteLine($"🔗 Collected: {url}");
+                        var linkEl = card.FindElement(By.CssSelector("a[target='_blank']"));
+                        var url = linkEl.GetAttribute("href");
+
+                        if (!string.IsNullOrEmpty(url) && !seenUrls.Contains(url))
+                        {
+                            links.Add(url);
+                            seenUrls.Add(url);
+                            Console.WriteLine($"🔗 Collected: {url}");
+
+                            if (links.Count >= limit)
+                                break;
+                        }
+                    }
+                    catch
+                    {
+                        // Skip cards with missing or malformed links
                     }
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"❌ Error collecting link at index {processed}: {ex.Message}");
-                }
 
-                processed++;
-
-                // Scroll slightly to trigger lazy loading of new cards
+                // ⚖️ Medium speed scroll
                 ((IJavaScriptExecutor)driver).ExecuteScript(@"
                     window.scrollBy({
-                        top: 200,
+                        top: 250,
                         left: 0,
                         behavior: 'smooth'
                     });
                 ");
-                Thread.Sleep(500);
+                Thread.Sleep(1000);
             }
 
             Console.WriteLine($"✅ Collected {links.Count} hospital links.");

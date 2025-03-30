@@ -8,46 +8,34 @@ using FindingHospitalsAutomation.Utilities.Csv;
 
 namespace FindingHospitalsAutomation.ParallelScraping
 {
-    public class ParallelHospitalScraper
+    public static class ParallelHospitalScraper
     {
-        public static void ScrapeHospitalPagesInParallel(List<string> urls)
+        public static void ScrapeHospitalsInParallel(List<string> urls)
         {
             var results = new List<HospitalInfo>();
-            var locker = new object();
+            object locker = new();
 
-            var options = new ParallelOptions
-            {
-                MaxDegreeOfParallelism = 4
-            };
-
-            Parallel.ForEach(urls, options, url =>
+            Parallel.ForEach(urls, new ParallelOptions { MaxDegreeOfParallelism = 4 }, url =>
             {
                 IWebDriver driver = null!;
 
                 try
                 {
-                    var chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArgument("start-maximized");
+                    var options = new ChromeOptions();
+                    options.AddArgument("start-maximized");
 
-                    driver = new ChromeDriver(chromeOptions);
+                    driver = new ChromeDriver(options);
                     driver.Navigate().GoToUrl(url);
 
-                    // ✅ Dismiss data consent popup if present
                     try
                     {
                         var consentBtn = new WebDriverWait(driver, TimeSpan.FromSeconds(3))
                             .Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("button.fc-cta-consent")));
                         consentBtn.Click();
-                        Console.WriteLine("✅ Consent popup dismissed.");
-
-                        // ✅ Scroll down slightly to hide sticky header
                         ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollBy(0, 200);");
                         Thread.Sleep(500);
                     }
-                    catch (WebDriverTimeoutException)
-                    {
-                        // No popup shown
-                    }
+                    catch { }
 
                     var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                     wait.Until(ExpectedConditions.ElementExists(By.CssSelector("span[data-qa-id='read_more_info']")));
@@ -61,7 +49,7 @@ namespace FindingHospitalsAutomation.ParallelScraping
                     catch { }
 
                     bool hasRating = false, isOpen24x7 = false, hasParking = false;
-                    double rating = 0.0;
+                    double rating = 0;
                     string location = "N/A";
 
                     try
@@ -75,7 +63,7 @@ namespace FindingHospitalsAutomation.ParallelScraping
                     try
                     {
                         var timeEl = driver.FindElement(By.CssSelector("p.u-green-text"));
-                        isOpen24x7 = timeEl.Text.Trim().Contains("Open 24", StringComparison.OrdinalIgnoreCase);
+                        isOpen24x7 = timeEl.Text.Contains("24", StringComparison.OrdinalIgnoreCase);
                     }
                     catch { }
 
@@ -88,12 +76,8 @@ namespace FindingHospitalsAutomation.ParallelScraping
 
                     try
                     {
-                        var locationElement = driver.FindElement(By.CssSelector("p[data-qa-id='address_body']"));
-                        location = locationElement.Text
-                            .Replace("Get Directions", "")
-                            .Replace("\r", "")
-                            .Replace("\n", " ")
-                            .Trim();
+                        var loc = driver.FindElement(By.CssSelector("p[data-qa-id='address_body']"));
+                        location = loc.Text.Replace("Get Directions", "").Replace("\r", "").Replace("\n", " ").Trim();
                     }
                     catch { }
 
@@ -101,18 +85,16 @@ namespace FindingHospitalsAutomation.ParallelScraping
                     {
                         var name = driver.Title.Split('|')[0].Trim();
 
-                        var hospital = new HospitalInfo
-                        {
-                            Name = name,
-                            Rating = rating,
-                            IsOpen24x7 = true,
-                            HasParking = true,
-                            Location = location
-                        };
-
                         lock (locker)
                         {
-                            results.Add(hospital);
+                            results.Add(new HospitalInfo
+                            {
+                                Name = name,
+                                Rating = rating,
+                                IsOpen24x7 = true,
+                                HasParking = true,
+                                Location = location
+                            });
                         }
 
                         Console.WriteLine($"✅ Matched: {name}");

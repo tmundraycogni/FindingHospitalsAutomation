@@ -20,17 +20,17 @@ namespace FindingHospitalsAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Search for hospitals in a specific city")]
+    [NUnit.Framework.DescriptionAttribute("Search Hospitals")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
-    public partial class SearchForHospitalsInASpecificCityFeature
+    public partial class SearchHospitalsFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Search for hospitals in a specific city", "  As a user\r\n  I want to search for hospitals in Bangalore\r\n  So that I can view " +
-                "available hospital options", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Search Hospitals", "  As a user\r\n  I want to search for hospitals from the homepage\r\n  So that I can " +
+                "view hospital results and return to the homepage", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "SearchHospitals.feature"
 #line hidden

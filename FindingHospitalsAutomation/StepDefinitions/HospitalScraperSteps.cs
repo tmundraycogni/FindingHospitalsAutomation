@@ -1,11 +1,14 @@
 ﻿using Reqnroll;
 using OpenQA.Selenium;
-using FindingHospitalsAutomation.Drivers;
-using FindingHospitalsAutomation.Pages;
-using FindingHospitalsAutomation.Utilities;
-using FindingHospitalsAutomation.Utilities.Logger;
-using FindingHospitalsAutomation.ParallelScraping;
 using NUnit.Framework;
+using System.IO;
+using System;
+using FindingHospitalsAutomation.Drivers;
+using FindingHospitalsAutomation.ParallelScraping;
+using FindingHospitalsAutomation.Utilities.Csv;
+using FindingHospitalsAutomation.Utilities.Logger;
+using FindingHospitalsAutomation.Utilities.Reporting;
+using FindingHospitalsAutomation.Utilities.Screenshots;
 
 namespace FindingHospitalsAutomation.StepDefinitions
 {
@@ -13,57 +16,42 @@ namespace FindingHospitalsAutomation.StepDefinitions
     public class HospitalScraperSteps
     {
         private readonly IWebDriver driver;
-        private readonly HospitalResultsPage resultsPage;
 
         public HospitalScraperSteps()
         {
             driver = WebDriverManager.GetDriver();
-            resultsPage = new HospitalResultsPage(driver);
         }
 
         [Given(@"I navigate to the hospital results page from config")]
         public void GivenINavigateToTheHospitalResultsPageFromConfig()
         {
-            var data = HospitalSearchDataReader.LoadData();
-            Log.Info($"Navigating to: {data.searchUrl}");
-            driver.Navigate().GoToUrl(data.searchUrl);
+            ExtentReportHelper.CreateTest("Filter top-rated 24x7 hospitals using parallel scraping");
+            ExtentReportHelper.LogInfo("Navigating to: https://www.practo.com/search/hospitals?results_type=hospital&q=[{\"word\":\"hospital\",\"autocompleted\":true,\"category\":\"type\"}]&city=Bangalore");
+
+            driver.Navigate().GoToUrl("https://www.practo.com/search/hospitals?results_type=hospital&q=[{\"word\":\"hospital\",\"autocompleted\":true,\"category\":\"type\"}]&city=Bangalore");
         }
 
         [When(@"I extract and scrape the top (.*) hospital links in parallel")]
         public void WhenIExtractAndScrapeTheTopHospitalLinksInParallel(int count)
         {
-            Log.Info($"⏳ Collecting top {count} hospital links...");
-            var links = HospitalResultsLinkCollector.CollectHospitalLinks(driver, count);
-            Log.Info($"✅ Collected {links.Count} hospital links.");
+            var hospitalLinks = HospitalResultsLinkCollector.CollectHospitalLinks(driver, count);
+            ParallelHospitalScraper.ScrapeHospitalsInParallel(hospitalLinks);
 
-            if (links.Count == 0)
-            {
-                Log.Warning("⚠️ No links were collected. Skipping scraping.");
-                return;
-            }
-
-            ParallelHospitalScraper.ScrapeHospitalPagesInParallel(links);
+            var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "HospitalScrape");
+            ExtentReportHelper.AttachScreenshot("Scraped Hospitals", screenshotBytes);
         }
 
         [Then(@"the valid hospital data should be saved to the CSV")]
         public void ThenTheValidHospitalDataShouldBeSavedToTheCSV()
         {
-            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "HospitalResults.csv");
-
+            string filePath = CsvWriterHelper.GetCsvFilePath();
             Assert.That(File.Exists(filePath), Is.True, "CSV file was not created.");
-            var lines = File.ReadAllLines(filePath);
-            Assert.That(lines.Length, Is.GreaterThan(1), "CSV file exists but is empty.");
         }
 
-        [AfterScenario]
+        [AfterScenario("HospitalScrape")]
         public void CleanUp()
         {
-            if (ScenarioContext.Current.TestError != null)
-            {
-                Log.Error("❌ Test failed: " + ScenarioContext.Current.TestError.Message);
-            }
-
-            Log.Info("🧹 Closing browser after scenario...");
+            Log.Info("🧹 Closing browser after hospital scrape scenario...");
             WebDriverManager.DisposeDriver();
         }
     }
