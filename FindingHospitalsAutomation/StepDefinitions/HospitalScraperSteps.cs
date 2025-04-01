@@ -46,6 +46,8 @@ namespace FindingHospitalsAutomation.StepDefinitions
         {
             string filePath = CsvWriterHelper.GetCsvFilePath();
             Assert.That(File.Exists(filePath), Is.True, "CSV file was not created.");
+
+            ExtentReportHelper.AttachTextFile("Hospital Results CSV", filePath);
         }
 
         [AfterScenario("HospitalScrape")]

@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using FindingHospitalsAutomation.Drivers;
 using FindingHospitalsAutomation.Utilities.Logger;
 using FindingHospitalsAutomation.Utilities.Screenshots;
+using FindingHospitalsAutomation.Utilities.Reporting;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.IO;
@@ -94,6 +95,12 @@ namespace FindingHospitalsAutomation.StepDefinitions
                 Log.Info($"✅ Extracted {cities.Count} cities.");
                 Console.WriteLine("Top Cities:");
                 cities.ForEach(c => Console.WriteLine("📍 " + c));
+
+                // ✅ Attach CSV to Extent Report
+                if (File.Exists(outputPath))
+                {
+                    ExtentReportHelper.AttachTextFile("Top Cities CSV", outputPath);
+                }
             }
             catch (Exception ex)
             {
