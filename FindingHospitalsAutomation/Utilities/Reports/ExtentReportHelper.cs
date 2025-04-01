@@ -1,4 +1,5 @@
 ﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.MarkupUtils;
 using AventStack.ExtentReports.Reporter;
 using System;
 using System.IO;
@@ -25,7 +26,6 @@ namespace FindingHospitalsAutomation.Utilities.Reporting
 
             sparkReporter.Config.DocumentTitle = "Finding Hospitals Report";
             sparkReporter.Config.ReportName = "BDD Hospital Results";
-            // sparkReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
 
             extent.AddSystemInfo("Tested By", "QA Engineer");
             extent.AddSystemInfo("Environment", "Practo");
@@ -75,6 +75,20 @@ namespace FindingHospitalsAutomation.Utilities.Reporting
             else
             {
                 test?.Warning("⚠️ Screenshot was not captured (empty byte array)");
+            }
+        }
+
+        public static void AttachTextFile(string title, string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                string content = File.ReadAllText(filePath);
+                test?.Info(title).Info(MarkupHelper.CreateCodeBlock(content));
+                Console.WriteLine("📄 Text file attached to report.");
+            }
+            else
+            {
+                test?.Warning("⚠️ Text file not found: " + filePath);
             }
         }
 

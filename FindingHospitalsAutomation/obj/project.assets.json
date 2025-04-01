@@ -50,6 +50,19 @@
           }
         }
       },
+      "HtmlAgilityPack/1.11.60": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.ApplicationInsights/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -1119,6 +1132,20 @@
           "buildMultiTargeting/Reqnroll.Tools.MsBuild.Generation.props": {}
         }
       },
+      "Selenium.Axe/4.0.21": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.60",
+          "Newtonsoft.Json": "13.0.3",
+          "Selenium.WebDriver": "4.19.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Selenium.Axe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Selenium.Axe.dll": {}
+        }
+      },
       "Selenium.Support/4.30.0": {
         "type": "package",
         "dependencies": {
@@ -1497,6 +1524,54 @@
         "lib/net8.0/Gherkin.xml",
         "lib/netstandard2.0/Gherkin.dll",
         "lib/netstandard2.0/Gherkin.xml"
+      ]
+    },
+    "HtmlAgilityPack/1.11.60": {
+      "sha512": "7Uzaf1Mxeuxne33LpTZfSsuRW4sRRX6FWMolOSxXcaAwcKvFevH2E+P6tb4dMWhdyUdBfi0N0yyPZ8hqodfEYg==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.60",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.60.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
       ]
     },
     "Microsoft.ApplicationInsights/2.22.0": {
@@ -3173,6 +3248,19 @@
         "tasks/netstandard2.0/System.Threading.Tasks.Extensions.dll"
       ]
     },
+    "Selenium.Axe/4.0.21": {
+      "sha512": "4vpf+/WqYvUYmCR8wtSOqZLukFHA4eJ7+eUM+W6zjqKTrojAjlHqT/Ai/8vkEs0P7qDWKLhonBMRGfvksJH0Uw==",
+      "type": "package",
+      "path": "selenium.axe/4.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net471/Selenium.Axe.dll",
+        "lib/netstandard2.0/Selenium.Axe.dll",
+        "selenium.axe.4.0.21.nupkg.sha512",
+        "selenium.axe.nuspec"
+      ]
+    },
     "Selenium.Support/4.30.0": {
       "sha512": "mpUvloTX1Nj7JdCZUSlLRIxcVBoPFAirLoqAEfO246f0nuxp8ibtEHGTBfRvJGReO0nbvqfOKyVW3fU6a/z7kw==",
       "type": "package",
@@ -3861,6 +3949,7 @@
       "NUnit3TestAdapter >= 5.0.0",
       "Reqnroll >= 2.4.0",
       "Reqnroll.NUnit >= 2.4.0",
+      "Selenium.Axe >= 4.0.21",
       "Selenium.Support >= 4.30.0",
       "Selenium.WebDriver >= 4.30.0",
       "Selenium.WebDriver.ChromeDriver >= 134.0.6998.16500",
@@ -3953,6 +4042,10 @@
           "Reqnroll.NUnit": {
             "target": "Package",
             "version": "[2.4.0, )"
+          },
+          "Selenium.Axe": {
+            "target": "Package",
+            "version": "[4.0.21, )"
           },
           "Selenium.Support": {
             "target": "Package",

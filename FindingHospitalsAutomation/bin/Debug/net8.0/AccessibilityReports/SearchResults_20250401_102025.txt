@@ -1,0 +1,138 @@
+❌ color-contrast - Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Help: https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI
+  ▶ Affected Element: <span>99%</span>
+  🔹 Target Selector: li:nth-child(2) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .doctor-feedback > .content > span:nth-child(1)
+  ▶ Affected Element: <span>&nbsp;•&nbsp;<!-- -->137 Patient Stories</span>
+  🔹 Target Selector: li:nth-child(2) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .doctor-feedback > .content > span:nth-child(2)
+  ▶ Affected Element: <span>100%</span>
+  🔹 Target Selector: li:nth-child(3) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .doctor-feedback > .content > span:nth-child(1)
+  ▶ Affected Element: <span>&nbsp;•&nbsp;<!-- -->4 Patient Stories</span>
+  🔹 Target Selector: li:nth-child(3) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .doctor-feedback > .content > span:nth-child(2)
+  ▶ Affected Element: <p class="line_3">46 years experience</p>
+  🔹 Target Selector: li:nth-child(4) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .u-d-flex > .right > .line_3
+  ▶ Affected Element: <button class="c-book-cta">Book Hospital Visit</button>
+  🔹 Target Selector: li:nth-child(5) > .c-estb-card > .col-3 > .c-cta > .c-book-cta
+  ▶ Affected Element: <p class="line_3">19 years experience</p>
+  🔹 Target Selector: li:nth-child(6) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .u-d-flex > .right > .line_3
+  ▶ Affected Element: <p class="line_3">30 years experience</p>
+  🔹 Target Selector: li:nth-child(7) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .u-d-flex > .right > .line_3
+  ▶ Affected Element: <p class="line_3">19 years experience</p>
+  🔹 Target Selector: li:nth-child(8) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .u-d-flex > .right > .line_3
+  ▶ Affected Element: <p class="line_3">15 years experience</p>
+  🔹 Target Selector: li:nth-child(10) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .list > .doctor-card-wrapper:nth-child(4) > .c-doctor-card > .u-d-flex > .right > .line_3
+
+❌ empty-table-header - Ensure table headers have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI
+  ▶ Affected Element: <th> </th>
+  🔹 Target Selector: .hospital-table > thead > tr > th:nth-child(1)
+
+❌ image-alt - Ensure <img> elements have alternative text or a role of none or presentation
+Help: https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI
+  ▶ Affected Element: <img src="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png" width="40" height="40" srcset="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png">
+  🔹 Target Selector: li:nth-child(2) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .next-arrow > .is-visible.LazyLoad > img[width="40"][height="40"]
+  ▶ Affected Element: <img src="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png" width="40" height="40" srcset="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png">
+  🔹 Target Selector: li:nth-child(3) > .c-estb-card > .col-2 > .uv2-spacer--lg-top > .c-horizontal-scroll-list > .next-arrow > .is-visible.LazyLoad > img[width="40"][height="40"]
+
+❌ landmark-one-main - Ensure the document has a main landmark
+Help: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+  🔹 Target Selector: html
+
+❌ link-name - Ensure links have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI
+  ▶ Affected Element: <a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a>
+  🔹 Target Selector: .practo-logo > .nav-interact[href$="practo.com/"]
+
+❌ list - Ensure that lists are structured correctly
+Help: https://dequeuniversity.com/rules/axe/4.10/list?application=axeAPI
+  ▶ Affected Element: <ol>
+  🔹 Target Selector: ol
+
+❌ meta-viewport - Ensure <meta name="viewport"> does not disable text scaling and zooming
+Help: https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI
+  ▶ Affected Element: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  🔹 Target Selector: meta[name="viewport"]
+
+❌ region - Ensure all page content is contained by landmarks
+Help: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+  ▶ Affected Element: <div class="nav-mid">
+  🔹 Target Selector: .desktop > .wrapper.branding > .nav-mid
+  ▶ Affected Element: <span class="new-badge cushion-right-small">NEW</span>
+  🔹 Target Selector: .new-badge
+  ▶ Affected Element: <span class="nav-interact" event="Nav Provider Marketing:Interacted:Plus Corporate">For Corporates</span>
+  🔹 Target Selector: .up-triangle.u-d-item > .nav-interact
+  ▶ Affected Element: <span class="u-d-item up-triangle">For Providers</span>
+  🔹 Target Selector: .providers-marketing > .up-triangle.u-d-item
+  ▶ Affected Element: <span class="u-d-item up-triangle">Security &amp; help</span>
+  🔹 Target Selector: .nav-items--additional-link.hover-dark.u-d-trigger:nth-child(3) > .up-triangle.u-d-item
+  ▶ Affected Element: <div class="nav-items">
+  🔹 Target Selector: .nav-items:nth-child(4)
+  ▶ Affected Element: <div class="c-omni__placeholder">
+  🔹 Target Selector: .c-omni__placeholder
+  ▶ Affected Element: <div class="c-prime-header"><h1 class="title">1,224 Hospitals in Bangalore<!-- --> </h1></div>
+  🔹 Target Selector: .c-prime-header
+  ▶ Affected Element: <div class="col-1">
+  🔹 Target Selector: li:nth-child(2) > .c-estb-card > .col-1
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(2) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(2) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-1">
+  🔹 Target Selector: li:nth-child(3) > .c-estb-card > .col-1
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(3) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(3) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-1">
+  🔹 Target Selector: li:nth-child(4) > .c-estb-card > .col-1
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(4) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(4) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-1">
+  🔹 Target Selector: li:nth-child(5) > .c-estb-card > .col-1
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(5) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(5) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(6) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(6) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(7) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(7) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(8) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(8) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(9) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(9) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(10) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(10) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="col-2">
+  🔹 Target Selector: li:nth-child(11) > .c-estb-card > .col-2
+  ▶ Affected Element: <div class="c-feedback">
+  🔹 Target Selector: li:nth-child(11) > .c-estb-card > .col-3 > .c-feedback
+  ▶ Affected Element: <div class="pure-u-10-24 u-spacer--margin">
+  🔹 Target Selector: .pure-u-10-24
+  ▶ Affected Element: <table data-qa-id="seo-establishment-footer-table" class="doctor-footer-seo-table">
+  🔹 Target Selector: .doctor-footer-seo-table
+  ▶ Affected Element: <h2 class="u-d-inlineblock u-cushion--bottom-less u-bold u-grey_3-text u-smallest-font" data-qa-id="popular-searches">Hospitals in Bangalore</h2>
+  🔹 Target Selector: div:nth-child(1) > .u-cushion--bottom-less[data-qa-id="popular-searches"]
+  ▶ Affected Element: <div class="u-d-inlineblock u-grey_3-text u-smallest-font">
+  🔹 Target Selector: .u-d-inlineblock.u-grey_3-text.u-smallest-font:nth-child(3)
+  ▶ Affected Element: <div>
+  🔹 Target Selector: .u-cushion--vertical > div:nth-child(2)
+  ▶ Affected Element: <p class="heading">Hospital Overview in Bangalore</p>
+  🔹 Target Selector: .heading
+  ▶ Affected Element: <div class="c-hospital-table-wrapper">
+  🔹 Target Selector: .c-hospital-table-wrapper
+  ▶ Affected Element: <div class="u-spacer--medium-top u-spacer--medium-bottom">
+  🔹 Target Selector: .u-spacer--medium-bottom.u-spacer--medium-top
+
