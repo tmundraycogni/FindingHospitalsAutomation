@@ -22,18 +22,17 @@ namespace FindingHospitalsAutomation.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Search Hospitals")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
+    [NUnit.Framework.CategoryAttribute("parallel")]
     public partial class SearchHospitalsFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "parallel"};
         
         private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Search Hospitals", "  As a user\r\n  I want to search for hospitals from the homepage\r\n  So that I can " +
                 "view hospital results and return to the homepage", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
-        
-#line 1 "SearchHospitals.feature"
-#line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public static async System.Threading.Tasks.Task FeatureSetupAsync()
@@ -90,9 +89,7 @@ namespace FindingHospitalsAutomation.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Perform a hospital search via homepage", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
+            this.ScenarioInitialize(scenarioInfo);
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
             {
                 testRunner.SkipScenario();
@@ -100,15 +97,9 @@ namespace FindingHospitalsAutomation.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 7
-    await testRunner.GivenAsync("I open the hospital search page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 8
-    await testRunner.ThenAsync("I should be taken to the hospital search results page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-#line 9
-    await testRunner.AndAsync("I should be navigated back to the homepage", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
+                await testRunner.GivenAsync("I open the hospital search page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+                await testRunner.ThenAsync("I should be taken to the hospital search results page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+                await testRunner.AndAsync("I should be navigated back to the homepage", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
             }
             await this.ScenarioCleanupAsync();
         }

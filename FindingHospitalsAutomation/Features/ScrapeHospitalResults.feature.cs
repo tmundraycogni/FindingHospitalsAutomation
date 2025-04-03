@@ -22,17 +22,16 @@ namespace FindingHospitalsAutomation.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Scrape Hospital Results")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
+    [NUnit.Framework.CategoryAttribute("scraper")]
     public partial class ScrapeHospitalResultsFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "scraper"};
         
         private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Scrape Hospital Results", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
-        
-#line 1 "ScrapeHospitalResults.feature"
-#line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public static async System.Threading.Tasks.Task FeatureSetupAsync()
@@ -89,9 +88,7 @@ namespace FindingHospitalsAutomation.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Filter top-rated 24x7 hospitals using parallel scraping", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 3
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
+            this.ScenarioInitialize(scenarioInfo);
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
             {
                 testRunner.SkipScenario();
@@ -99,15 +96,9 @@ namespace FindingHospitalsAutomation.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 4
-    await testRunner.GivenAsync("I navigate to the hospital results page from config", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 5
-    await testRunner.WhenAsync("I extract and scrape the top 50 hospital links in parallel", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 6
-    await testRunner.ThenAsync("the valid hospital data should be saved to the CSV", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
+                await testRunner.GivenAsync("I navigate to the hospital results page from config", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+                await testRunner.WhenAsync("I extract and scrape the top 50 hospital links in parallel", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+                await testRunner.ThenAsync("the valid hospital data should be saved to the CSV", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
             }
             await this.ScenarioCleanupAsync();
         }

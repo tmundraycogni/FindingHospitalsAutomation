@@ -13,6 +13,7 @@ using FindingHospitalsAutomation.Utilities.Screenshots;
 namespace FindingHospitalsAutomation.StepDefinitions
 {
     [Binding]
+    [Category("scraper")]
     public class HospitalScraperSteps
     {
         private readonly IWebDriver driver;
@@ -54,7 +55,7 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public void CleanUp()
         {
             Log.Info("🧹 Closing browser after hospital scrape scenario...");
-            WebDriverManager.DisposeDriver();
+            WebDriverManager.QuitDriver();
         }
     }
 }

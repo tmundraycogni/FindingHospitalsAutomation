@@ -1,4 +1,5 @@
-﻿Feature: Extract Diagnostics Top Cities
+﻿@parallel
+Feature: Extract Diagnostics Top Cities
 
   Scenario: Extract top city names from the Lab Tests page
     Given I navigate to the diagnostics page from the homepage

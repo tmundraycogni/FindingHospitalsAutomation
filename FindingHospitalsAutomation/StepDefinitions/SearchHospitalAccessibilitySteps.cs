@@ -6,10 +6,14 @@ using FindingHospitalsAutomation.Utilities.Accessibility;
 using FindingHospitalsAutomation.Utilities.Logger;
 using FindingHospitalsAutomation.Utilities.Reporting;
 using NUnit.Framework;
+using System;
+using System.Threading;
 
 namespace FindingHospitalsAutomation.StepDefinitions
 {
     [Binding]
+    [Parallelizable]
+    [Category("parallel")]
     public class SearchHospitalAccessibilitySteps
     {
         private readonly IWebDriver driver;
@@ -29,7 +33,15 @@ namespace FindingHospitalsAutomation.StepDefinitions
 
             Log.Info("Navigating to homepage...");
             hospitalPage.OpenHomePage();
+
+            // ✅ Bring window to front just like in search test
+            TryBringBrowserToFront();
+
+            Thread.Sleep(800); // Let page fully render
+
             hospitalPage.SetLocation("Bangalore");
+            Thread.Sleep(500);
+
             hospitalPage.SetSearchTerm("Hospital");
         }
 
@@ -40,11 +52,25 @@ namespace FindingHospitalsAutomation.StepDefinitions
             AxeAccessibilityHelper.RunAxeScan(driver, "HospitalSearch_Accessibility");
         }
 
-        [AfterScenario("Accessibility")]
+        [AfterScenario]
         public void CleanUp()
         {
             Log.Info("🧹 Closing browser after accessibility test...");
-            WebDriverManager.DisposeDriver();
+            WebDriverManager.QuitDriver();
+        }
+
+        // ✅ Foreground helper copied from SearchHospitalSteps
+        private void TryBringBrowserToFront()
+        {
+            try
+            {
+                var windowHandle = ((OpenQA.Selenium.Chrome.ChromeDriver)driver).CurrentWindowHandle;
+                driver.SwitchTo().Window(windowHandle);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"⚠️ Could not bring browser to front: {ex.Message}");
+            }
         }
     }
 }

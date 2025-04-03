@@ -6,10 +6,15 @@ using FindingHospitalsAutomation.Utilities.Logger;
 using FindingHospitalsAutomation.Utilities.Reporting;
 using FindingHospitalsAutomation.Utilities.Screenshots;
 using NUnit.Framework;
+using System;
+using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace FindingHospitalsAutomation.StepDefinitions
 {
     [Binding]
+    [Parallelizable]
+    [Category("parallel")]
     public class SearchHospitalSteps
     {
         private readonly IWebDriver driver;
@@ -29,7 +34,15 @@ namespace FindingHospitalsAutomation.StepDefinitions
 
             Log.Info("Navigating to homepage...");
             hospitalPage.OpenHomePage();
+
+            // ✅ Bring browser to front
+            TryBringBrowserToFront();
+
+            // ✅ Short delay to stabilize rendering
+            Thread.Sleep(800);
+
             hospitalPage.SetLocation("Bangalore");
+            Thread.Sleep(500); // optional buffer
             hospitalPage.SetSearchTerm("Hospital");
 
             var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "SearchPage");
@@ -40,7 +53,19 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public void ThenIShouldBeTakenToTheHospitalSearchResultsPage()
         {
             ExtentReportHelper.LogInfo("Verifying that hospital results have loaded...");
-            bool resultsVisible = hospitalPage.IsResultsPageLoaded();
+
+            // ✅ Try waiting up to 10 seconds total for the results to appear
+            bool resultsVisible = false;
+            for (int i = 0; i < 5; i++)
+            {
+                if (hospitalPage.IsResultsPageLoaded())
+                {
+                    resultsVisible = true;
+                    break;
+                }
+
+                Thread.Sleep(2000); // wait 2s and try again
+            }
 
             if (resultsVisible)
             {
@@ -64,6 +89,20 @@ namespace FindingHospitalsAutomation.StepDefinitions
 
             Assert.That(driver.Url, Does.Contain("practo.com"), "Did not navigate back to homepage.");
             ExtentReportHelper.LogPass("Successfully navigated back to the homepage.");
+        }
+
+        // ✅ Native method to bring Chrome to foreground (Windows only)
+        private void TryBringBrowserToFront()
+        {
+            try
+            {
+                var windowHandle = ((OpenQA.Selenium.Chrome.ChromeDriver)driver).CurrentWindowHandle;
+                driver.SwitchTo().Window(windowHandle);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"⚠️ Could not bring browser to front: {ex.Message}");
+            }
         }
     }
 }

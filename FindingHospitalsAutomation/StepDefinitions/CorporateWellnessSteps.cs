@@ -8,6 +8,8 @@ using FindingHospitalsAutomation.Utilities.Logger;
 namespace FindingHospitalsAutomation.StepDefinitions
 {
     [Binding]
+    [Parallelizable]
+    [Category("parallel")]
     public class CorporateWellnessSteps
     {
         private readonly IWebDriver driver;
@@ -45,7 +47,7 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public void CleanUp()
         {
             Log.Info("🧹 Closing browser after scenario...");
-            WebDriverManager.DisposeDriver();
+            WebDriverManager.QuitDriver();
         }
     }
 }

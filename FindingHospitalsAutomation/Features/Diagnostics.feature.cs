@@ -22,17 +22,16 @@ namespace FindingHospitalsAutomation.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Extract Diagnostics Top Cities")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
+    [NUnit.Framework.CategoryAttribute("parallel")]
     public partial class ExtractDiagnosticsTopCitiesFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "parallel"};
         
         private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Extract Diagnostics Top Cities", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
-        
-#line 1 "Diagnostics.feature"
-#line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public static async System.Threading.Tasks.Task FeatureSetupAsync()
@@ -89,9 +88,7 @@ namespace FindingHospitalsAutomation.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Extract top city names from the Lab Tests page", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 3
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
+            this.ScenarioInitialize(scenarioInfo);
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
             {
                 testRunner.SkipScenario();
@@ -99,12 +96,8 @@ namespace FindingHospitalsAutomation.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 4
-    await testRunner.GivenAsync("I navigate to the diagnostics page from the homepage", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 5
-    await testRunner.ThenAsync("I extract the top city names and save them", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
+                await testRunner.GivenAsync("I navigate to the diagnostics page from the homepage", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+                await testRunner.ThenAsync("I extract the top city names and save them", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
             }
             await this.ScenarioCleanupAsync();
         }

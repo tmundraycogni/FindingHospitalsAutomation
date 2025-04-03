@@ -3,64 +3,67 @@ using AventStack.ExtentReports.MarkupUtils;
 using AventStack.ExtentReports.Reporter;
 using System;
 using System.IO;
+using System.Threading;
 
 namespace FindingHospitalsAutomation.Utilities.Reporting
 {
     public static class ExtentReportHelper
     {
-        private static ExtentReports? extent;
-        private static ExtentTest? test;
-        private static ExtentSparkReporter? sparkReporter;
+        private static AsyncLocal<ExtentReports> extent = new();
+        private static AsyncLocal<ExtentTest> test = new();
+        private static AsyncLocal<ExtentSparkReporter> reporter = new();
 
         private static readonly string reportDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports");
-        private static readonly string reportPath = Path.Combine(reportDirectory, $"ExtentReport_{DateTime.Now:yyyyMMdd_HHmmss}.html");
 
-        public static void InitializeReport()
+        public static void InitializeReport(string scenarioName)
         {
             if (!Directory.Exists(reportDirectory))
                 Directory.CreateDirectory(reportDirectory);
 
-            sparkReporter = new ExtentSparkReporter(reportPath);
-            extent = new ExtentReports();
-            extent.AttachReporter(sparkReporter);
+            string safeName = string.Join("_", scenarioName.Split(Path.GetInvalidFileNameChars()));
+            string reportPath = Path.Combine(reportDirectory, $"{safeName}_{DateTime.Now:yyyyMMdd_HHmmssfff}.html");
 
-            sparkReporter.Config.DocumentTitle = "Finding Hospitals Report";
-            sparkReporter.Config.ReportName = "BDD Hospital Results";
+            reporter.Value = new ExtentSparkReporter(reportPath);
+            extent.Value = new ExtentReports();
+            extent.Value.AttachReporter(reporter.Value);
 
-            extent.AddSystemInfo("Tested By", "QA Engineer");
-            extent.AddSystemInfo("Environment", "Practo");
-            extent.AddSystemInfo("Browser", "Chrome");
+            reporter.Value.Config.DocumentTitle = "Finding Hospitals Report";
+            reporter.Value.Config.ReportName = "BDD Hospital Results";
 
-            Console.WriteLine("✅ Extent Report Initialized");
+            extent.Value.AddSystemInfo("Tested By", "QA Engineer");
+            extent.Value.AddSystemInfo("Environment", "Practo");
+            extent.Value.AddSystemInfo("Browser", "Chrome");
+
+            Console.WriteLine("✅ Extent Report Initialized for scenario: " + scenarioName);
         }
 
         public static void CreateTest(string testName)
         {
-            test = extent?.CreateTest(testName);
+            test.Value = extent.Value.CreateTest(testName);
             Console.WriteLine($"📝 Test Created: {testName}");
         }
 
         public static void LogInfo(string message)
         {
-            test?.Info(message);
+            test.Value?.Info(message);
             Console.WriteLine($"[INFO] {message}");
         }
 
         public static void LogPass(string message)
         {
-            test?.Pass(message);
+            test.Value?.Pass(message);
             Console.WriteLine($"[PASS] {message}");
         }
 
         public static void LogFail(string message)
         {
-            test?.Fail(message);
+            test.Value?.Fail(message);
             Console.WriteLine($"[FAIL] {message}");
         }
 
         public static void LogWarning(string message)
         {
-            test?.Warning(message);
+            test.Value?.Warning(message);
             Console.WriteLine($"[WARN] {message}");
         }
 
@@ -69,12 +72,12 @@ namespace FindingHospitalsAutomation.Utilities.Reporting
             if (screenshotBytes.Length > 0)
             {
                 string base64 = Convert.ToBase64String(screenshotBytes);
-                test?.AddScreenCaptureFromBase64String(base64, title);
+                test.Value?.AddScreenCaptureFromBase64String(base64, title);
                 Console.WriteLine("📸 Screenshot attached to report.");
             }
             else
             {
-                test?.Warning("⚠️ Screenshot was not captured (empty byte array)");
+                test.Value?.Warning("⚠️ Screenshot was not captured (empty byte array)");
             }
         }
 
@@ -83,19 +86,19 @@ namespace FindingHospitalsAutomation.Utilities.Reporting
             if (File.Exists(filePath))
             {
                 string content = File.ReadAllText(filePath);
-                test?.Info(title).Info(MarkupHelper.CreateCodeBlock(content));
+                test.Value?.Info(title).Info(MarkupHelper.CreateCodeBlock(content));
                 Console.WriteLine("📄 Text file attached to report.");
             }
             else
             {
-                test?.Warning("⚠️ Text file not found: " + filePath);
+                test.Value?.Warning("⚠️ Text file not found: " + filePath);
             }
         }
 
         public static void FlushReport()
         {
-            extent?.Flush();
-            Console.WriteLine($"📁 Report saved to: {Path.GetFullPath(reportPath)}");
+            extent.Value?.Flush();
+            Console.WriteLine("📁 Extent Report flushed.");
         }
     }
 }

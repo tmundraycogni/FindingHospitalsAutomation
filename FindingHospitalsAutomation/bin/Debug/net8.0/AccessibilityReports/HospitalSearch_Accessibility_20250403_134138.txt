@@ -1,0 +1,39 @@
+❌ color-contrast - Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Help: https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI
+  ▶ Affected Element: <a href="/" class="u-cushion-medium u-fill--light-blue u-base-font u-round-corner--small u-color--white u-spacer--top u-border--none"> Go to practo.com homepage </a>
+
+❌ document-title - Ensure each HTML document contains a non-empty <title> element
+Help: https://dequeuniversity.com/rules/axe/4.10/document-title?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+
+❌ image-alt - Ensure <img> elements have alternative text or a role of none or presentation
+Help: https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI
+  ▶ Affected Element: <img class="error--image" src="//www.practostatic.com/web-assets/images/ic_no_results.6c9c1549d8ea.svg">
+
+❌ landmark-one-main - Ensure the document has a main landmark
+Help: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+
+❌ link-name - Ensure links have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI
+  ▶ Affected Element: <a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a>
+
+❌ meta-viewport - Ensure <meta name="viewport"> does not disable text scaling and zooming
+Help: https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI
+  ▶ Affected Element: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+❌ page-has-heading-one - Ensure that the page, or at least one of its frames contains a level-one heading
+Help: https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+
+❌ region - Ensure all page content is contained by landmarks
+Help: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+  ▶ Affected Element: <div class="nav-mid">
+  ▶ Affected Element: <span class="new-badge cushion-right-small">NEW</span>
+  ▶ Affected Element: <span class="nav-interact" event="Nav Provider Marketing:Interacted:Plus Corporate">For Corporates</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">For Providers</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">Security &amp; help</span>
+  ▶ Affected Element: <div class="nav-items">
+  ▶ Affected Element: <div class="c-omni__placeholder">
+  ▶ Affected Element: <div class="pure-g u-cushion--large-vertical u-fill--faintest-grey">
+

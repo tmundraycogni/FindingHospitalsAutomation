@@ -1,0 +1,14 @@
+{
+  "bindingCulture": {
+    "name": "en-US"
+  },
+  "generator": {
+    "allowDebugGeneratedFiles": true,
+    "path": "Features/StepDefinitions",
+    "language": "C#"
+  },
+  "runtime": {
+    "stopAtFirstError": false,
+    "missingOrPendingStepsOutcome": "Inconclusive"
+  }
+}

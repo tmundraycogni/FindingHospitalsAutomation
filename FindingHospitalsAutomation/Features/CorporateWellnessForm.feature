@@ -1,4 +1,5 @@
-﻿Feature: Validate Corporate Wellness Form
+﻿@parallel
+Feature: Validate Corporate Wellness Form
   Ensure that an error is displayed when the Corporate Wellness form is submitted with invalid details.
 
   Scenario: Submit Corporate Wellness form with invalid inputs

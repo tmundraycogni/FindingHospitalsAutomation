@@ -1,4 +1,4 @@
-﻿@Accessibility
+﻿@accessibility @parallel
 Feature: Accessibility scan for the Hospital Search page
 
   Scenario: Perform Axe accessibility scan on the hospital search results page

@@ -19,19 +19,17 @@ namespace FindingHospitalsAutomation.Hooks
             _scenarioContext = scenarioContext;
         }
 
-        [BeforeTestRun]
-        public static void BeforeTestRun()
-        {
-            ExtentReportHelper.InitializeReport();
-        }
-
         [BeforeScenario]
         public void BeforeScenario()
         {
-            driver = WebDriverManager.GetDriver();
             string scenarioName = _scenarioContext.ScenarioInfo.Title;
+
+            // 💡 Initialize a unique report for each scenario
+            ExtentReportHelper.InitializeReport(scenarioName);
             ExtentReportHelper.CreateTest(scenarioName);
             ExtentReportHelper.LogInfo($"🔍 Starting Scenario: {scenarioName}");
+
+            driver = WebDriverManager.GetDriver();
         }
 
         [AfterStep]
@@ -42,14 +40,12 @@ namespace FindingHospitalsAutomation.Hooks
 
             if (_scenarioContext.TestError != null)
             {
-                // 🟥 Log failure + attach screenshot
                 ExtentReportHelper.LogFail($"❌ {stepType}: {stepText}");
                 var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver);
                 ExtentReportHelper.AttachScreenshot("Failure Screenshot", screenshotBytes);
             }
             else
             {
-                // ✅ Log step pass
                 ExtentReportHelper.LogPass($"✔️ {stepType}: {stepText}");
             }
         }

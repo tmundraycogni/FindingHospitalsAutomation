@@ -14,53 +14,69 @@ namespace FindingHospitalsAutomation.Pages
         public HospitalSearchPage(IWebDriver webDriver)
         {
             driver = webDriver;
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
 
-        // Input fields
         private By locationInput => By.XPath("//*[@id='c-omni-container']/div/div[1]/div/input");
         private By searchInput => By.XPath("//*[@id='c-omni-container']/div/div[2]/div[1]/input");
-
-        // Dropdown suggestion items
         private By suggestionItems => By.CssSelector(".c-omni-suggestion-item");
-
-        // Hospital result cards
         private By hospitalCards => By.CssSelector(".listing-row");
 
         public void OpenHomePage()
         {
             driver.Navigate().GoToUrl("https://www.practo.com/");
+            FocusWindow(); // 👈 Ensure window is active
+            Thread.Sleep(1000);
         }
 
         public void SetLocation(string location)
         {
-            wait.Until(ExpectedConditions.ElementIsVisible(locationInput)).Clear();
-            driver.FindElement(locationInput).SendKeys(location);
-            Thread.Sleep(1500); // Let suggestions load
+            FocusWindow();
+            int attempts = 0;
+            bool success = false;
 
-            SelectSuggestionByContains(suggestionItems, "Bangalore");
+            while (attempts < 3 && !success)
+            {
+                try
+                {
+                    var input = wait.Until(ExpectedConditions.ElementIsVisible(locationInput));
+                    ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", input);
+                    input.Click();
+                    input.Clear();
+                    input.SendKeys(location);
+                    Thread.Sleep(2000);
 
-            wait.Until(ExpectedConditions.ElementIsVisible(searchInput));
+                    SelectSuggestionByContains(suggestionItems, "Bangalore");
+                    wait.Until(ExpectedConditions.ElementIsVisible(searchInput));
+                    success = true;
+                }
+                catch
+                {
+                    attempts++;
+                    Thread.Sleep(1000);
+                }
+            }
+
+            if (!success)
+                throw new Exception("❌ Failed to set location input field after multiple retries.");
         }
 
         public void SetSearchTerm(string term)
         {
+            FocusWindow();
             var input = wait.Until(ExpectedConditions.ElementIsVisible(searchInput));
             input.Clear();
             input.SendKeys(term);
 
-            // Wait for dropdown to begin loading
             wait.Until(driver => driver.FindElements(suggestionItems).Count > 0);
-
-            // Optional: wait just a bit longer to ensure full DOM structure loads
-            Thread.Sleep(1000);
+            Thread.Sleep(1500);
 
             SelectSearchTypeByLabel("TYPE");
         }
 
-
         private void SelectSuggestionByContains(By suggestionLocator, string keyword)
         {
+            FocusWindow();
             wait.Until(ExpectedConditions.ElementIsVisible(suggestionLocator));
             var items = driver.FindElements(suggestionLocator);
 
@@ -89,18 +105,10 @@ namespace FindingHospitalsAutomation.Pages
                         var rightLabel = el.FindElement(By.CssSelector("[data-qa-id='omni-suggestion-right']"));
                         return rightLabel.Text.Trim().Equals(label, StringComparison.OrdinalIgnoreCase);
                     }
-                    catch (StaleElementReferenceException)
-                    {
-                        return false; // DOM refreshed, retry
-                    }
-                    catch (NoSuchElementException)
-                    {
-                        return false;
-                    }
+                    catch { return false; }
                 });
             });
 
-            // Refetch the dropdown items to get a fresh copy
             var items = driver.FindElements(suggestionItems);
 
             foreach (var item in items)
@@ -115,23 +123,15 @@ namespace FindingHospitalsAutomation.Pages
                         return;
                     }
                 }
-                catch (StaleElementReferenceException)
-                {
-                    continue;
-                }
-                catch (NoSuchElementException)
-                {
-                    continue;
-                }
+                catch { continue; }
             }
 
             throw new Exception($"No suggestion marked as type '{label}' was found.");
         }
 
-
-
         public void ScrollUntilFirstCardWithoutRating()
         {
+            FocusWindow();
             int previousCount = 0;
             int unchangedAttempts = 0;
             int sameCountLimit = 3;
@@ -141,7 +141,6 @@ namespace FindingHospitalsAutomation.Pages
                 var cards = driver.FindElements(hospitalCards);
                 int currentCount = cards.Count;
 
-                // Stop if we find a card without rating
                 foreach (var card in cards)
                 {
                     string cardText = card.Text;
@@ -155,15 +154,13 @@ namespace FindingHospitalsAutomation.Pages
                     }
                 }
 
-                // Scroll smoothly to 80% of the page
                 ((IJavaScriptExecutor)driver).ExecuteScript(@"
-            window.scrollTo({
-                top: document.body.scrollHeight * 0.8,
-                behavior: 'smooth'
-            });
-        ");
+                    window.scrollTo({
+                        top: document.body.scrollHeight * 0.8,
+                        behavior: 'smooth'
+                    });");
 
-                Thread.Sleep(2000); // Allow time for lazy loading
+                Thread.Sleep(2500);
 
                 cards = driver.FindElements(hospitalCards);
                 if (cards.Count > previousCount)
@@ -180,7 +177,6 @@ namespace FindingHospitalsAutomation.Pages
             Console.WriteLine("Stopped scrolling — no more hospitals loaded.");
         }
 
-
         public bool AreHospitalResultsVisible()
         {
             try
@@ -196,12 +192,6 @@ namespace FindingHospitalsAutomation.Pages
                 return false;
             }
         }
-
-
-
-
-
-
 
         public List<string> GetTopRatedHospitalsOpen24x7(double minRating)
         {
@@ -226,7 +216,7 @@ namespace FindingHospitalsAutomation.Pages
                 }
                 catch
                 {
-                    continue; // Skip any cards missing elements
+                    continue;
                 }
             }
 
@@ -247,6 +237,18 @@ namespace FindingHospitalsAutomation.Pages
             }
         }
 
-
+        // 🔍 Utility: Bring Chrome window to front
+        private void FocusWindow()
+        {
+            try
+            {
+                ((IJavaScriptExecutor)driver).ExecuteScript("window.focus();");
+                Thread.Sleep(300);
+            }
+            catch
+            {
+                // Safe to ignore
+            }
+        }
     }
 }

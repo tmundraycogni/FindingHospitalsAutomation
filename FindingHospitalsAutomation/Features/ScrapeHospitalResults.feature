@@ -1,4 +1,5 @@
-﻿Feature: Scrape Hospital Results
+﻿@scraper
+Feature: Scrape Hospital Results
 
   Scenario: Filter top-rated 24x7 hospitals using parallel scraping
     Given I navigate to the hospital results page from config

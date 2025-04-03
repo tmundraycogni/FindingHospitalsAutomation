@@ -1,0 +1,89 @@
+❌ color-contrast - Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Help: https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI
+  ▶ Affected Element: <span>87%</span>
+  ▶ Affected Element: <span>&nbsp;•&nbsp;<!-- -->31 Patient Stories</span>
+  ▶ Affected Element: <span>100%</span>
+  ▶ Affected Element: <span>&nbsp;•&nbsp;<!-- -->4 Patient Stories</span>
+  ▶ Affected Element: <p class="line_3">38 years experience</p>
+  ▶ Affected Element: <button class="c-book-cta">Book Hospital Visit</button>
+  ▶ Affected Element: <p class="line_3">19 years experience</p>
+  ▶ Affected Element: <p class="line_3">19 years experience</p>
+  ▶ Affected Element: <p class="line_3">15 years experience</p>
+
+❌ empty-table-header - Ensure table headers have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI
+  ▶ Affected Element: <th> </th>
+
+❌ image-alt - Ensure <img> elements have alternative text or a role of none or presentation
+Help: https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI
+  ▶ Affected Element: <img src="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png" width="40" height="40" srcset="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png">
+  ▶ Affected Element: <img src="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png" width="40" height="40" srcset="//www.practostatic.com/web-assets/images/img_right_arrow.111c37d91122.png">
+
+❌ landmark-one-main - Ensure the document has a main landmark
+Help: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+
+❌ link-name - Ensure links have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI
+  ▶ Affected Element: <a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a>
+
+❌ list - Ensure that lists are structured correctly
+Help: https://dequeuniversity.com/rules/axe/4.10/list?application=axeAPI
+  ▶ Affected Element: <ol>
+
+❌ meta-viewport - Ensure <meta name="viewport"> does not disable text scaling and zooming
+Help: https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI
+  ▶ Affected Element: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+❌ region - Ensure all page content is contained by landmarks
+Help: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+  ▶ Affected Element: <div class="nav-mid">
+  ▶ Affected Element: <span class="new-badge cushion-right-small">NEW</span>
+  ▶ Affected Element: <span class="nav-interact" event="Nav Provider Marketing:Interacted:Plus Corporate">For Corporates</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">For Providers</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">Security &amp; help</span>
+  ▶ Affected Element: <div class="nav-items">
+  ▶ Affected Element: <div class="c-omni__placeholder">
+  ▶ Affected Element: <div class="c-prime-header"><h1 class="title">1,224 Hospitals in Bangalore<!-- --> </h1></div>
+  ▶ Affected Element: <div class="col-1">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-1">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-1">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-1">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="col-2">
+  ▶ Affected Element: <div class="c-appointments-info">
+  ▶ Affected Element: <div class="c-feedback">
+  ▶ Affected Element: <div class="pure-u-10-24 u-spacer--margin">
+  ▶ Affected Element: <table data-qa-id="seo-establishment-footer-table" class="doctor-footer-seo-table">
+  ▶ Affected Element: <h2 class="u-d-inlineblock u-cushion--bottom-less u-bold u-grey_3-text u-smallest-font" data-qa-id="popular-searches">Hospitals in Bangalore</h2>
+  ▶ Affected Element: <div class="u-d-inlineblock u-grey_3-text u-smallest-font">
+  ▶ Affected Element: <div>
+  ▶ Affected Element: <p class="heading">Hospital Overview in Bangalore</p>
+  ▶ Affected Element: <div class="c-hospital-table-wrapper">
+  ▶ Affected Element: <div class="u-spacer--medium-top u-spacer--medium-bottom">
+

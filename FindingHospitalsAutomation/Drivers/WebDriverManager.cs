@@ -1,44 +1,47 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Threading;
 
 namespace FindingHospitalsAutomation.Drivers
 {
     public static class WebDriverManager
     {
-        private static IWebDriver driver;
+        private static AsyncLocal<IWebDriver?> driver = new();
 
         public static IWebDriver GetDriver()
         {
-            if (driver == null || IsDriverInvalid())
+            if (driver.Value == null || IsDriverInvalid(driver.Value))
             {
-                driver = new ChromeDriver();
-                driver.Manage().Window.Maximize();
+                var options = new ChromeOptions();
+                options.AddArgument("start-maximized");
+
+                driver.Value = new ChromeDriver(options);
             }
 
-            return driver;
+            return driver.Value;
         }
 
-        public static void DisposeDriver()
+        public static void QuitDriver()
         {
-            if (driver != null)
+            if (driver.Value != null)
             {
                 try
                 {
-                    driver.Quit();
+                    driver.Value.Quit();
                 }
                 catch
                 {
-                    // Ignore any errors during cleanup
+                    // Ignore cleanup errors
                 }
-                driver = null;
+                driver.Value = null;
             }
         }
 
-        private static bool IsDriverInvalid()
+        private static bool IsDriverInvalid(IWebDriver? currentDriver)
         {
             try
             {
-                _ = driver?.WindowHandles;
+                _ = currentDriver?.WindowHandles;
                 return false;
             }
             catch
@@ -46,15 +49,5 @@ namespace FindingHospitalsAutomation.Drivers
                 return true;
             }
         }
-
-        public static void QuitDriver()
-        {
-            if (driver != null)
-            {
-                driver.Quit();
-                driver = null!;
-            }
-        }
-
     }
 }

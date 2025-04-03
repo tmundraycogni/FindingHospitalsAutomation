@@ -22,18 +22,17 @@ namespace FindingHospitalsAutomation.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Validate Corporate Wellness Form")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
+    [NUnit.Framework.CategoryAttribute("parallel")]
     public partial class ValidateCorporateWellnessFormFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "parallel"};
         
         private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Validate Corporate Wellness Form", "  Ensure that an error is displayed when the Corporate Wellness form is submitted" +
                 " with invalid details.", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
-        
-#line 1 "CorporateWellnessForm.feature"
-#line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public static async System.Threading.Tasks.Task FeatureSetupAsync()
@@ -90,9 +89,7 @@ namespace FindingHospitalsAutomation.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Submit Corporate Wellness form with invalid inputs", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 4
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
+            this.ScenarioInitialize(scenarioInfo);
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
             {
                 testRunner.SkipScenario();
@@ -100,15 +97,9 @@ namespace FindingHospitalsAutomation.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 5
-    await testRunner.GivenAsync("I navigate to the Corporate Wellness form", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 6
-    await testRunner.WhenAsync("I submit the form with invalid details", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 7
-    await testRunner.ThenAsync("a validation error should be shown", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
+                await testRunner.GivenAsync("I navigate to the Corporate Wellness form", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+                await testRunner.WhenAsync("I submit the form with invalid details", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+                await testRunner.ThenAsync("a validation error should be shown", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
             }
             await this.ScenarioCleanupAsync();
         }

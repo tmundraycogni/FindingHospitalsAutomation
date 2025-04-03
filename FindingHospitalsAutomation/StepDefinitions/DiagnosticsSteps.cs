@@ -16,6 +16,8 @@ using SeleniumExtras.WaitHelpers;
 namespace FindingHospitalsAutomation.StepDefinitions
 {
     [Binding]
+    [Parallelizable]
+    [Category("parallel")]
     public class DiagnosticsSteps
     {
         private readonly IWebDriver driver;
@@ -24,7 +26,7 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public DiagnosticsSteps()
         {
             driver = WebDriverManager.GetDriver();
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(12)); // slightly longer wait
         }
 
         [Given(@"I navigate to the diagnostics page from the homepage")]
@@ -32,12 +34,17 @@ namespace FindingHospitalsAutomation.StepDefinitions
         {
             Log.Info("🔍 Navigating to homepage...");
             driver.Navigate().GoToUrl("https://www.practo.com");
+            Thread.Sleep(1000); // give page time to settle
+
+            // 🧩 Bring browser window to foreground
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.focus();");
 
             try
             {
                 var consentButton = wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("button.fc-cta-consent")));
                 consentButton.Click();
                 Log.Info("✅ Consent popup dismissed on homepage.");
+                Thread.Sleep(300);
             }
             catch (WebDriverTimeoutException) { }
 
@@ -50,14 +57,14 @@ namespace FindingHospitalsAutomation.StepDefinitions
                 Thread.Sleep(300);
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", surgeriesTab);
 
-                Thread.Sleep(2000); // Shorter load wait
+                Thread.Sleep(2500); // allow tab to expand
 
                 var labTestsTab = wait.Until(ExpectedConditions.ElementExists(By.XPath("//div[@class='product-tab']//div[text()='Lab Tests']")));
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", labTestsTab);
                 Thread.Sleep(300);
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", labTestsTab);
 
-                Thread.Sleep(2000); // Shorter load wait
+                Thread.Sleep(2500); // allow Lab Tests page to load
             }
             catch (Exception ex)
             {
@@ -72,7 +79,6 @@ namespace FindingHospitalsAutomation.StepDefinitions
         {
             try
             {
-                // ✅ Dismiss second popup on Lab Tests page if present
                 try
                 {
                     var consentBtn = wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("button.fc-cta-consent")));
@@ -93,7 +99,6 @@ namespace FindingHospitalsAutomation.StepDefinitions
                 File.WriteAllLines(outputPath, new[] { "Top Cities" }.Concat(cities));
 
                 Log.Info($"✅ Extracted {cities.Count} cities.");
-                Console.WriteLine("Top Cities:");
                 cities.ForEach(c => Console.WriteLine("📍 " + c));
 
                 // ✅ Attach CSV to Extent Report
@@ -114,7 +119,7 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public void CleanUp()
         {
             Log.Info("🧹 Closing browser after diagnostics scenario...");
-            WebDriverManager.DisposeDriver();
+            WebDriverManager.QuitDriver();
         }
     }
 }

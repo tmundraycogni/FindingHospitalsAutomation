@@ -1,4 +1,5 @@
-﻿Feature: Search Hospitals
+﻿@parallel
+Feature: Search Hospitals
   As a user
   I want to search for hospitals from the homepage
   So that I can view hospital results and return to the homepage
