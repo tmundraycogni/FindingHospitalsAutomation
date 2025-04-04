@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using System.Threading;
 using FindingHospitalsAutomation.Utilities.Logger;
+using FindingHospitalsAutomation.Utilities.Config;
 
 namespace FindingHospitalsAutomation.Pages
 {
@@ -21,7 +22,8 @@ namespace FindingHospitalsAutomation.Pages
 
         public void NavigateToFormViaHeader()
         {
-            driver.Navigate().GoToUrl("https://www.practo.com");
+            var homepageUrl = PageUrlConfig.GetUrl("homepage");
+            driver.Navigate().GoToUrl(homepageUrl);
 
             try
             {
@@ -41,7 +43,6 @@ namespace FindingHospitalsAutomation.Pages
             ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", wellnessLink);
             Thread.Sleep(3000);
 
-            // Slight scroll to ensure lazy-loaded form fields become interactable
             ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollBy(0, 200);");
             Thread.Sleep(1000);
         }
@@ -50,8 +51,8 @@ namespace FindingHospitalsAutomation.Pages
         {
             driver.FindElement(By.Id("name")).SendKeys("");
             driver.FindElement(By.Id("organizationName")).SendKeys("");
-            driver.FindElement(By.Id("contactNumber")).SendKeys("123"); // Invalid number
-            driver.FindElement(By.Id("officialEmailId")).SendKeys("invalidemail"); // Invalid email
+            driver.FindElement(By.Id("contactNumber")).SendKeys("123");
+            driver.FindElement(By.Id("officialEmailId")).SendKeys("invalidemail");
 
             var orgSizeDropdown = new SelectElement(driver.FindElement(By.Id("organizationSize")));
             orgSizeDropdown.SelectByIndex(1);
@@ -64,21 +65,17 @@ namespace FindingHospitalsAutomation.Pages
         {
             try
             {
-                var contactField = driver.FindElement(By.Id("contactNumber"));
-                var emailField = driver.FindElement(By.Id("officialEmailId"));
+                var demoButton = wait.Until(ExpectedConditions.ElementExists(
+                    By.XPath("//button[contains(text(),'Schedule a demo')]")));
 
-                string contactClass = contactField.GetAttribute("class");
-                string emailClass = emailField.GetAttribute("class");
+                bool isDisabled = demoButton.GetAttribute("disabled") != null;
+                Log.Info("🔍 Schedule a demo button is " + (isDisabled ? "disabled" : "enabled"));
 
-                Log.Info("🔍 Contact input classes: " + contactClass);
-                Log.Info("🔍 Email input classes: " + emailClass);
-
-                return contactClass.Contains("corporate-form__input--error") ||
-                       emailClass.Contains("corporate-form__input--error");
+                return isDisabled;
             }
             catch (Exception ex)
             {
-                Log.Error("❌ Error checking validation classes: " + ex.Message);
+                Log.Error("❌ Error checking demo button state: " + ex.Message);
                 return false;
             }
         }

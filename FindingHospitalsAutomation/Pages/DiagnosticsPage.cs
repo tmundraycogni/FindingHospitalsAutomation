@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using FindingHospitalsAutomation.Utilities;
+using FindingHospitalsAutomation.Utilities.Config;
 
 namespace FindingHospitalsAutomation.Pages
 {
@@ -17,7 +19,8 @@ namespace FindingHospitalsAutomation.Pages
 
         public void NavigateToDiagnosticsPage()
         {
-            driver.Navigate().GoToUrl("https://www.practo.com/");
+            string homepageUrl = PageUrlConfig.GetUrl("homepage");
+            driver.Navigate().GoToUrl(homepageUrl);
             HandleConsentPopup();
 
             // Click Surgeries tab

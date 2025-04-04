@@ -38,7 +38,7 @@ namespace FindingHospitalsAutomation.StepDefinitions
         [Then("a validation error should be shown")]
         public void ThenAValidationErrorShouldBeShown()
         {
-            Log.Info("Checking for validation feedback...");
+            Log.Info("Checking for validation via disabled button...");
             bool isValidationShown = wellnessPage.IsFormValidationTriggered();
             Assert.That(isValidationShown, Is.True, "Validation error not triggered as expected.");
         }

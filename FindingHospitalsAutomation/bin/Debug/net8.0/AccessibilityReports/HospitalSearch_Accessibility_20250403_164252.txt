@@ -1,0 +1,129 @@
+❌ aria-hidden-focus - Ensure aria-hidden elements are not focusable nor contain focusable elements
+Help: https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus?application=axeAPI
+  ▶ Affected Element: <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="8" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="9" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+
+❌ color-contrast - Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Help: https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI
+  ▶ Affected Element: <span class="c-offer-tag u-round-corner u-border-white u-t-bold u-t-white">New</span>
+  ▶ Affected Element: <span>Multi-level security checks</span>
+  ▶ Affected Element: <span>Multiple data backups</span>
+  ▶ Affected Element: <span>Stringent data privacy policies</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/company/security" target="_blank">Read more</a>
+  ▶ Affected Element: <a class="c-button__redirect" href="/bangalore/doctors" target="_blank">Find me the right doctor</a>
+  ▶ Affected Element: <span>Fees starting at </span>
+  ▶ Affected Element: <span class="u-t-bold">₹99</span>
+  ▶ Affected Element: <span>Verified doctors respond in </span>
+  ▶ Affected Element: <span class="u-t-bold">5 minutes</span>
+  ▶ Affected Element: <span class="u-t-bold">100% </span>
+  ▶ Affected Element: <span>Private and confidential</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/consult?product=fabric&amp;amp;attribution=Home_Details_Section" target="_blank">Consult now</a>
+  ▶ Affected Element: <span class="u-t-bold">85375</span>
+  ▶ Affected Element: <span> doctors online</span>
+  ▶ Affected Element: <div class="c-testimonial__review_text u-t-regular">Good initiative. The doctors are responsive and provide you a brief consultation</div>
+  ▶ Affected Element: <span class="u-t-regular u-inline-middle u-m-l-10">Aaron Moitra</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/healthfeed?utm_source=practo_home" target="_blank">More articles</a>
+  ▶ Affected Element: <span>Guaranteed availability</span>
+  ▶ Affected Element: <span>Over </span>
+  ▶ Affected Element: <span class="u-t-bold">130,000+ </span>
+  ▶ Affected Element: <span> genuine medicines</span>
+  ▶ Affected Element: <span>Home delivery in </span>
+  ▶ Affected Element: <span class="u-t-bold">24hrs </span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/order?utm_source=practo_home" target="_blank">Order Medicines</a>
+  ▶ Affected Element: <div class="c-testimonial__review_text u-t-regular">Very Helpful! I hope a lot more doctors come onboard soon.The Doctor's tool is also very helpful, apart from the app.The prescriptions are all on mail, and messages, which makes things very easy to use and track. Great job overall!</div>
+  ▶ Affected Element: <a class="c-button__redirect" href="//drive.practo.com/login?utm_source=practo_home" target="_blank">Find out more</a>
+  ▶ Affected Element: <span>Get seen by </span>
+  ▶ Affected Element: <span class="u-t-bold">25M+ </span>
+  ▶ Affected Element: <span>patients on Practo.com</span>
+  ▶ Affected Element: <span>The most advanced software for clinics and hospitals</span>
+  ▶ Affected Element: <span>State of the art business analytics for enterprises</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/providers?utm_source=practo_home" target="_blank">Learn more</a>
+  ▶ Affected Element: <div class="c-testimonial__review_text u-t-regular">Enjoying all the programs that too through one app.but for Physio people pls add a column for notes instead of prescription.</div>
+  ▶ Affected Element: <span class="u-t-regular u-inline-middle u-m-l-10">Nidhi Kumar</span>
+  ▶ Affected Element: <div class="cta">
+            KNOW MORE
+          </div>
+
+❌ html-has-lang - Ensure every HTML document has a lang attribute
+Help: https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI
+  ▶ Affected Element: <html>
+
+❌ image-alt - Ensure <img> elements have alternative text or a role of none or presentation
+Help: https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI
+  ▶ Affected Element: <img width="250" src="//www.practostatic.com/web-assets/home/assets/images/security_1.4f45ac92aba979dac915f864df632d90.png">
+  ▶ Affected Element: <img src="https://www.practostatic.com/fit/4db04794b4480ab58282b44aa275378edf0283d7">
+  ▶ Affected Element: <img src="https://www.practostatic.com/fit/7dc5262c78ee87980e03415b83ec8d4fea8b6524">
+  ▶ Affected Element: <img src="https://www.practostatic.com/fit/d13b357bbaf8396a191a6911384994d647d05f16">
+  ▶ Affected Element: <img width="80px" src="https://www.practostatic.com/scripts/images/pcs_logo_sm_white_250122.png">
+  ▶ Affected Element: <img src="https://www.practostatic.com/practo-care/doctor_home.png">
+
+❌ landmark-one-main - Ensure the document has a main landmark
+Help: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+  ▶ Affected Element: <html>
+
+❌ link-name - Ensure links have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI
+  ▶ Affected Element: <a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left fortune "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left tech-crunch "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left forbes "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left economic "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left wall-street  india-4"></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left times  india-5"></a>
+  ▶ Affected Element: <a class="c-download__app_links" href="https://app.appsflyer.com/com.practo.fabric?pid=web&amp;amp;c=homepage" target="_blank"><div class="lazyload-placeholder"></div></a>
+  ▶ Affected Element: <a class="c-download__app_links" href="https://app.appsflyer.com/id953772015?pid=web&amp;amp;c=homepage" target="_blank"><div class="lazyload-placeholder"></div></a>
+
+❌ meta-viewport - Ensure <meta name="viewport"> does not disable text scaling and zooming
+Help: https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI
+  ▶ Affected Element: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+❌ region - Ensure all page content is contained by landmarks
+Help: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+  ▶ Affected Element: <div class="nav-mid">
+  ▶ Affected Element: <span class="new-badge cushion-right-small">NEW</span>
+  ▶ Affected Element: <span class="nav-interact" event="Nav Provider Marketing:Interacted:Plus Corporate">For Corporates</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">For Providers</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">Security &amp; help</span>
+  ▶ Affected Element: <div class="nav-items">
+  ▶ Affected Element: <div class="c-jumbo">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-section__highlights_title"><h2 class="u-d-inline">Instant appointment with doctors.</h2><h2 class="u-t-bold u-d-inline">Guaranteed.</h2></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">100,000 </span><span>Verified doctors</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">3M+ </span><span>Patient recommendations</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">25M </span><span>Patients/year</span></div></div>
+  ▶ Affected Element: <div data-qa-id="book-cta" class="u-m-t-25 u-d-inline-block"><a class="c-button__redirect" href="/bangalore/doctors" target="_blank">Find me the right doctor</a></div>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 420px;">
+  ▶ Affected Element: <video class="rh5v-DefaultPlayer_video" poster="//www.practostatic.com/web-assets/home/assets/images/book.875ca26a3c4283c777660377e421e99b.png" width="250" height="480" loading="false" autoplay="" loop="">
+  ▶ Affected Element: <video class="rh5v-DefaultPlayer_video" poster="//www.practostatic.com/web-assets/home/assets/images/consult.15f1b416f3f4c9383b780757d7293d00.png" width="250" height="480" loading="false" autoplay="" loop="">
+  ▶ Affected Element: <div class="c-section__highlights_title"><h2 class="u-d-inline">Skip the waiting room.</h2><h2 class="u-t-bold">Consult with a doctor</h2></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Fees starting at </span><span class="u-t-bold">₹99</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Verified doctors respond in </span><span class="u-t-bold">5 minutes</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">100% </span><span>Private and confidential</span></div></div>
+  ▶ Affected Element: <div data-qa-id="consult-cta" class="u-m-t-25 u-d-inline-block"><a class="c-button__redirect" href="/consult?product=fabric&amp;amp;attribution=Home_Details_Section" target="_blank">Consult now</a></div>
+  ▶ Affected Element: <span class="c-consult__doctors_online u-t-grey"><span class="c-consult__doctors_pulse u-t-pulse left"></span><span class="u-t-bold">85375</span><span> doctors online</span></span>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 420px;">
+  ▶ Affected Element: <div class="c-healthfeed__header u-t-center u-t-bold"><h2>Read top articles from health experts</h2></div>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div class="u-t-center"><div data-qa-id="healthfeed-cta" class="u-m-t-25 u-d-inline-block"><a class="c-button__redirect" href="/healthfeed?utm_source=practo_home" target="_blank">More articles</a></div></div>
+  ▶ Affected Element: <div class="c-section__highlights_title"><h2 class="u-d-inline">Get all your medicines.</h2><h2 class="u-t-bold">Everytime. On time.</h2></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Guaranteed availability</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Over </span><span class="u-t-bold">130,000+ </span><span> genuine medicines</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Home delivery in </span><span class="u-t-bold">24hrs </span></div></div>
+  ▶ Affected Element: <div>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 420px;">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-country-list">
+  ▶ Affected Element: <div class="bottom-sticky--free-pcs-dweb-wrapper">
+

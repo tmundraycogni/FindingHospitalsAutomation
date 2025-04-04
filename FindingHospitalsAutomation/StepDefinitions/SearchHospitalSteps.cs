@@ -9,6 +9,8 @@ using NUnit.Framework;
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
+using FindingHospitalsAutomation;
+using FindingHospitalsAutomation.Utilities.Config;
 
 namespace FindingHospitalsAutomation.StepDefinitions
 {
@@ -35,14 +37,11 @@ namespace FindingHospitalsAutomation.StepDefinitions
             Log.Info("Navigating to homepage...");
             hospitalPage.OpenHomePage();
 
-            // ✅ Bring browser to front
             TryBringBrowserToFront();
-
-            // ✅ Short delay to stabilize rendering
             Thread.Sleep(800);
 
             hospitalPage.SetLocation("Bangalore");
-            Thread.Sleep(500); // optional buffer
+            Thread.Sleep(500);
             hospitalPage.SetSearchTerm("Hospital");
 
             var screenshotBytes = ScreenshotHelper.CaptureScreenshotAsBytes(driver, "SearchPage");
@@ -54,7 +53,6 @@ namespace FindingHospitalsAutomation.StepDefinitions
         {
             ExtentReportHelper.LogInfo("Verifying that hospital results have loaded...");
 
-            // ✅ Try waiting up to 10 seconds total for the results to appear
             bool resultsVisible = false;
             for (int i = 0; i < 5; i++)
             {
@@ -63,8 +61,7 @@ namespace FindingHospitalsAutomation.StepDefinitions
                     resultsVisible = true;
                     break;
                 }
-
-                Thread.Sleep(2000); // wait 2s and try again
+                Thread.Sleep(2000);
             }
 
             if (resultsVisible)
@@ -85,13 +82,13 @@ namespace FindingHospitalsAutomation.StepDefinitions
             ExtentReportHelper.LogInfo("Navigating back to the homepage...");
             Log.Info("Navigating back to the homepage...");
 
-            driver.Navigate().GoToUrl("https://www.practo.com");
+            var homepageUrl = PageUrlConfig.GetUrl("homepage");
+            driver.Navigate().GoToUrl(homepageUrl);
 
             Assert.That(driver.Url, Does.Contain("practo.com"), "Did not navigate back to homepage.");
             ExtentReportHelper.LogPass("Successfully navigated back to the homepage.");
         }
 
-        // ✅ Native method to bring Chrome to foreground (Windows only)
         private void TryBringBrowserToFront()
         {
             try

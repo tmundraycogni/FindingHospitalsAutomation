@@ -3,6 +3,9 @@ using OpenQA.Selenium.Support.UI;
 using System.Collections.ObjectModel;
 using SeleniumExtras.WaitHelpers;
 using System.Linq;
+using System.Threading;
+using FindingHospitalsAutomation;
+using FindingHospitalsAutomation.Utilities.Config;
 
 namespace FindingHospitalsAutomation.Pages
 {
@@ -24,8 +27,9 @@ namespace FindingHospitalsAutomation.Pages
 
         public void OpenHomePage()
         {
-            driver.Navigate().GoToUrl("https://www.practo.com/");
-            FocusWindow(); // 👈 Ensure window is active
+            string homepageUrl = PageUrlConfig.GetUrl("homepage");
+            driver.Navigate().GoToUrl(homepageUrl);
+            FocusWindow();
             Thread.Sleep(1000);
         }
 
@@ -237,7 +241,6 @@ namespace FindingHospitalsAutomation.Pages
             }
         }
 
-        // 🔍 Utility: Bring Chrome window to front
         private void FocusWindow()
         {
             try
@@ -245,10 +248,7 @@ namespace FindingHospitalsAutomation.Pages
                 ((IJavaScriptExecutor)driver).ExecuteScript("window.focus();");
                 Thread.Sleep(300);
             }
-            catch
-            {
-                // Safe to ignore
-            }
+            catch { }
         }
     }
 }

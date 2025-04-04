@@ -9,6 +9,7 @@ using FindingHospitalsAutomation.Utilities.Csv;
 using FindingHospitalsAutomation.Utilities.Logger;
 using FindingHospitalsAutomation.Utilities.Reporting;
 using FindingHospitalsAutomation.Utilities.Screenshots;
+using FindingHospitalsAutomation.Utilities.Config;
 
 namespace FindingHospitalsAutomation.StepDefinitions
 {
@@ -27,9 +28,14 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public void GivenINavigateToTheHospitalResultsPageFromConfig()
         {
             ExtentReportHelper.CreateTest("Filter top-rated 24x7 hospitals using parallel scraping");
-            ExtentReportHelper.LogInfo("Navigating to: https://www.practo.com/search/hospitals?results_type=hospital&q=[{\"word\":\"hospital\",\"autocompleted\":true,\"category\":\"type\"}]&city=Bangalore");
 
-            driver.Navigate().GoToUrl("https://www.practo.com/search/hospitals?results_type=hospital&q=[{\"word\":\"hospital\",\"autocompleted\":true,\"category\":\"type\"}]&city=Bangalore");
+            string url = TestConfigLoader.GetSearchUrl();
+
+            if (string.IsNullOrWhiteSpace(url))
+                throw new ArgumentNullException(nameof(url), "URL cannot be null.");
+
+            ExtentReportHelper.LogInfo($"Navigating to: {url}");
+            driver.Navigate().GoToUrl(url);
         }
 
         [When(@"I extract and scrape the top (.*) hospital links in parallel")]

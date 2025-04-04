@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Finding Hospitals Report</title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary">BDD Hospital Results</span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">4/3/2025 4:41:54 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Perform Axe accessibility scan on the hospital search results page</p>
+            <p class="text-sm">
+              <span>4:41:54 PM</span> / <span>2.74 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Perform Axe accessibility scan on the hospital search results page</h5>
+                  <span class='badge badge-success'>4/3/2025 4:41:54 PM</span>
+                  <span class='badge badge-danger'>4/3/2025 4:41:54 PM</span>
+                  <span class='badge badge-default'>2.74 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Apr 03, 2025 16:41:54</td>
+        <td>
+🔍 Starting Scenario: Perform Axe accessibility scan on the hospital search results page        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Accessibility scan: Hospital search page</p>
+            <p class="text-sm">
+              <span>4:42:04 PM</span> / <span>52984.15 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Accessibility scan: Hospital search page</h5>
+                  <span class='badge badge-success'>4/3/2025 4:42:04 PM</span>
+                  <span class='badge badge-danger'>4/3/2025 4:42:57 PM</span>
+                  <span class='badge badge-default'>52984.15 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Apr 03, 2025 16:42:04</td>
+        <td>
+Navigating to homepage...        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Apr 03, 2025 16:42:22</td>
+        <td>
+✔️ Given: I open the hospital search page for accessibility testing        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Apr 03, 2025 16:42:22</td>
+        <td>
+Running Axe accessibility scan...        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Apr 03, 2025 16:42:52</td>
+        <td>
+Accessibility Report        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Apr 03, 2025 16:42:52</td>
+        <td>
+<div class='row'><div class='col-md-12'><textarea readonly class='code-block'>❌ aria-hidden-focus - Ensure aria-hidden elements are not focusable nor contain focusable elements
+Help: https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus?application=axeAPI
+  ▶ Affected Element: <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="8" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+  ▶ Affected Element: <div data-index="9" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 334px;">
+
+❌ color-contrast - Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Help: https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI
+  ▶ Affected Element: <span class="c-offer-tag u-round-corner u-border-white u-t-bold u-t-white">New</span>
+  ▶ Affected Element: <span>Multi-level security checks</span>
+  ▶ Affected Element: <span>Multiple data backups</span>
+  ▶ Affected Element: <span>Stringent data privacy policies</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/company/security" target="_blank">Read more</a>
+  ▶ Affected Element: <a class="c-button__redirect" href="/bangalore/doctors" target="_blank">Find me the right doctor</a>
+  ▶ Affected Element: <span>Fees starting at </span>
+  ▶ Affected Element: <span class="u-t-bold">₹99</span>
+  ▶ Affected Element: <span>Verified doctors respond in </span>
+  ▶ Affected Element: <span class="u-t-bold">5 minutes</span>
+  ▶ Affected Element: <span class="u-t-bold">100% </span>
+  ▶ Affected Element: <span>Private and confidential</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/consult?product=fabric&amp;amp;attribution=Home_Details_Section" target="_blank">Consult now</a>
+  ▶ Affected Element: <span class="u-t-bold">85375</span>
+  ▶ Affected Element: <span> doctors online</span>
+  ▶ Affected Element: <div class="c-testimonial__review_text u-t-regular">Good initiative. The doctors are responsive and provide you a brief consultation</div>
+  ▶ Affected Element: <span class="u-t-regular u-inline-middle u-m-l-10">Aaron Moitra</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/healthfeed?utm_source=practo_home" target="_blank">More articles</a>
+  ▶ Affected Element: <span>Guaranteed availability</span>
+  ▶ Affected Element: <span>Over </span>
+  ▶ Affected Element: <span class="u-t-bold">130,000+ </span>
+  ▶ Affected Element: <span> genuine medicines</span>
+  ▶ Affected Element: <span>Home delivery in </span>
+  ▶ Affected Element: <span class="u-t-bold">24hrs </span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/order?utm_source=practo_home" target="_blank">Order Medicines</a>
+  ▶ Affected Element: <div class="c-testimonial__review_text u-t-regular">Very Helpful! I hope a lot more doctors come onboard soon.The Doctor's tool is also very helpful, apart from the app.The prescriptions are all on mail, and messages, which makes things very easy to use and track. Great job overall!</div>
+  ▶ Affected Element: <a class="c-button__redirect" href="//drive.practo.com/login?utm_source=practo_home" target="_blank">Find out more</a>
+  ▶ Affected Element: <span>Get seen by </span>
+  ▶ Affected Element: <span class="u-t-bold">25M+ </span>
+  ▶ Affected Element: <span>patients on Practo.com</span>
+  ▶ Affected Element: <span>The most advanced software for clinics and hospitals</span>
+  ▶ Affected Element: <span>State of the art business analytics for enterprises</span>
+  ▶ Affected Element: <a class="c-button__redirect" href="/providers?utm_source=practo_home" target="_blank">Learn more</a>
+  ▶ Affected Element: <div class="c-testimonial__review_text u-t-regular">Enjoying all the programs that too through one app.but for Physio people pls add a column for notes instead of prescription.</div>
+  ▶ Affected Element: <span class="u-t-regular u-inline-middle u-m-l-10">Nidhi Kumar</span>
+  ▶ Affected Element: <div class="cta">
+            KNOW MORE
+          </div>
+
+❌ html-has-lang - Ensure every HTML document has a lang attribute
+Help: https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI
+  ▶ Affected Element: <html>
+
+❌ image-alt - Ensure <img> elements have alternative text or a role of none or presentation
+Help: https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI
+  ▶ Affected Element: <img width="250" src="//www.practostatic.com/web-assets/home/assets/images/security_1.4f45ac92aba979dac915f864df632d90.png">
+  ▶ Affected Element: <img src="https://www.practostatic.com/fit/4db04794b4480ab58282b44aa275378edf0283d7">
+  ▶ Affected Element: <img src="https://www.practostatic.com/fit/7dc5262c78ee87980e03415b83ec8d4fea8b6524">
+  ▶ Affected Element: <img src="https://www.practostatic.com/fit/d13b357bbaf8396a191a6911384994d647d05f16">
+  ▶ Affected Element: <img width="80px" src="https://www.practostatic.com/scripts/images/pcs_logo_sm_white_250122.png">
+  ▶ Affected Element: <img src="https://www.practostatic.com/practo-care/doctor_home.png">
+
+❌ landmark-one-main - Ensure the document has a main landmark
+Help: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+  ▶ Affected Element: <html>
+
+❌ link-name - Ensure links have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI
+  ▶ Affected Element: <a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left fortune "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left tech-crunch "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left forbes "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left economic "></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left wall-street  india-4"></a>
+  ▶ Affected Element: <a href="/company/press" target="_blank" class="c-media-list u-f-left times  india-5"></a>
+  ▶ Affected Element: <a class="c-download__app_links" href="https://app.appsflyer.com/com.practo.fabric?pid=web&amp;amp;c=homepage" target="_blank"><div class="lazyload-placeholder"></div></a>
+  ▶ Affected Element: <a class="c-download__app_links" href="https://app.appsflyer.com/id953772015?pid=web&amp;amp;c=homepage" target="_blank"><div class="lazyload-placeholder"></div></a>
+
+❌ meta-viewport - Ensure <meta name="viewport"> does not disable text scaling and zooming
+Help: https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI
+  ▶ Affected Element: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+❌ region - Ensure all page content is contained by landmarks
+Help: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+  ▶ Affected Element: <div class="nav-mid">
+  ▶ Affected Element: <span class="new-badge cushion-right-small">NEW</span>
+  ▶ Affected Element: <span class="nav-interact" event="Nav Provider Marketing:Interacted:Plus Corporate">For Corporates</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">For Providers</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">Security &amp; help</span>
+  ▶ Affected Element: <div class="nav-items">
+  ▶ Affected Element: <div class="c-jumbo">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-section__highlights_title"><h2 class="u-d-inline">Instant appointment with doctors.</h2><h2 class="u-t-bold u-d-inline">Guaranteed.</h2></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">100,000 </span><span>Verified doctors</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">3M+ </span><span>Patient recommendations</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">25M </span><span>Patients/year</span></div></div>
+  ▶ Affected Element: <div data-qa-id="book-cta" class="u-m-t-25 u-d-inline-block"><a class="c-button__redirect" href="/bangalore/doctors" target="_blank">Find me the right doctor</a></div>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 420px;">
+  ▶ Affected Element: <video class="rh5v-DefaultPlayer_video" poster="//www.practostatic.com/web-assets/home/assets/images/book.875ca26a3c4283c777660377e421e99b.png" width="250" height="480" loading="false" autoplay="" loop="">
+  ▶ Affected Element: <video class="rh5v-DefaultPlayer_video" poster="//www.practostatic.com/web-assets/home/assets/images/consult.15f1b416f3f4c9383b780757d7293d00.png" width="250" height="480" loading="false" autoplay="" loop="">
+  ▶ Affected Element: <div class="c-section__highlights_title"><h2 class="u-d-inline">Skip the waiting room.</h2><h2 class="u-t-bold">Consult with a doctor</h2></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Fees starting at </span><span class="u-t-bold">₹99</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Verified doctors respond in </span><span class="u-t-bold">5 minutes</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span class="u-t-bold">100% </span><span>Private and confidential</span></div></div>
+  ▶ Affected Element: <div data-qa-id="consult-cta" class="u-m-t-25 u-d-inline-block"><a class="c-button__redirect" href="/consult?product=fabric&amp;amp;attribution=Home_Details_Section" target="_blank">Consult now</a></div>
+  ▶ Affected Element: <span class="c-consult__doctors_online u-t-grey"><span class="c-consult__doctors_pulse u-t-pulse left"></span><span class="u-t-bold">85375</span><span> doctors online</span></span>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 420px;">
+  ▶ Affected Element: <div class="c-healthfeed__header u-t-center u-t-bold"><h2>Read top articles from health experts</h2></div>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 334px;">
+  ▶ Affected Element: <div class="u-t-center"><div data-qa-id="healthfeed-cta" class="u-m-t-25 u-d-inline-block"><a class="c-button__redirect" href="/healthfeed?utm_source=practo_home" target="_blank">More articles</a></div></div>
+  ▶ Affected Element: <div class="c-section__highlights_title"><h2 class="u-d-inline">Get all your medicines.</h2><h2 class="u-t-bold">Everytime. On time.</h2></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Guaranteed availability</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Over </span><span class="u-t-bold">130,000+ </span><span> genuine medicines</span></div></div>
+  ▶ Affected Element: <div class="c-list-item"><div><i class="c-list-item__icon icon-ic_done_open_system"></i><span>Home delivery in </span><span class="u-t-bold">24hrs </span></div></div>
+  ▶ Affected Element: <div>
+  ▶ Affected Element: <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 420px;">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-section">
+  ▶ Affected Element: <div class="c-country-list">
+  ▶ Affected Element: <div class="bottom-sticky--free-pcs-dweb-wrapper">
+
+</textarea></div></div>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Apr 03, 2025 16:42:52</td>
+        <td>
+✔️ Then: I perform an accessibility scan on the hospital search results page        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>Apr 03, 2025 16:42:57</td>
+        <td>
+🧹 Closing browser after scenario...        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>4/3/2025 4:41:54 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>4/3/2025 4:42:57 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>2</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'>
+            <b>2</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>2</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> events failed, 
+            <b data-tooltip='%'>6</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "Perform Axe accessibility scan on the hospital search results page":2.7357,"Accessibility scan: Hospital search page":52984.152 };
+  </script>
+  <div class="row">
+      <div class="col-md-4 sysenv-container">
+      <div class="card">
+        <div class="card-header"><p>System/Environment</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Tested By</td>
+              <td>QA Engineer</td>
+            </tr>
+            <tr>
+              <td>Environment</td>
+              <td>Practo</td>
+            </tr>
+            <tr>
+              <td>Browser</td>
+              <td>Chrome</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 2,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 8,
+
+passParent:2,failParent:0,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:2,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:6,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>

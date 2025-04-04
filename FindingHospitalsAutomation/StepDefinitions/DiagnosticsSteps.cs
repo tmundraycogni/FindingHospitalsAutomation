@@ -5,6 +5,7 @@ using FindingHospitalsAutomation.Drivers;
 using FindingHospitalsAutomation.Utilities.Logger;
 using FindingHospitalsAutomation.Utilities.Screenshots;
 using FindingHospitalsAutomation.Utilities.Reporting;
+using FindingHospitalsAutomation.Utilities;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.IO;
@@ -12,6 +13,7 @@ using System;
 using System.Linq;
 using System.Threading;
 using SeleniumExtras.WaitHelpers;
+using FindingHospitalsAutomation.Utilities.Config;
 
 namespace FindingHospitalsAutomation.StepDefinitions
 {
@@ -26,17 +28,17 @@ namespace FindingHospitalsAutomation.StepDefinitions
         public DiagnosticsSteps()
         {
             driver = WebDriverManager.GetDriver();
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(12)); // slightly longer wait
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(12));
         }
 
         [Given(@"I navigate to the diagnostics page from the homepage")]
         public void GivenINavigateToTheDiagnosticsPageFromTheHomepage()
         {
             Log.Info("🔍 Navigating to homepage...");
-            driver.Navigate().GoToUrl("https://www.practo.com");
-            Thread.Sleep(1000); // give page time to settle
+            string homepageUrl = PageUrlConfig.GetUrl("homepage");
+            driver.Navigate().GoToUrl(homepageUrl);
+            Thread.Sleep(1000);
 
-            // 🧩 Bring browser window to foreground
             ((IJavaScriptExecutor)driver).ExecuteScript("window.focus();");
 
             try
@@ -56,15 +58,13 @@ namespace FindingHospitalsAutomation.StepDefinitions
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", surgeriesTab);
                 Thread.Sleep(300);
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", surgeriesTab);
-
-                Thread.Sleep(2500); // allow tab to expand
+                Thread.Sleep(2500);
 
                 var labTestsTab = wait.Until(ExpectedConditions.ElementExists(By.XPath("//div[@class='product-tab']//div[text()='Lab Tests']")));
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", labTestsTab);
                 Thread.Sleep(300);
                 ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", labTestsTab);
-
-                Thread.Sleep(2500); // allow Lab Tests page to load
+                Thread.Sleep(2500);
             }
             catch (Exception ex)
             {
@@ -101,7 +101,6 @@ namespace FindingHospitalsAutomation.StepDefinitions
                 Log.Info($"✅ Extracted {cities.Count} cities.");
                 cities.ForEach(c => Console.WriteLine("📍 " + c));
 
-                // ✅ Attach CSV to Extent Report
                 if (File.Exists(outputPath))
                 {
                     ExtentReportHelper.AttachTextFile("Top Cities CSV", outputPath);

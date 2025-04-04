@@ -33,7 +33,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="hospitalSearch.json">
+    <None Update="pageUrls.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testConfig.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="nlog.config">

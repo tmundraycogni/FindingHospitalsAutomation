@@ -1,0 +1,34 @@
+❌ landmark-one-main - Ensure the document has a main landmark
+Help: https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+
+❌ link-name - Ensure links have discernible text
+Help: https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI
+  ▶ Affected Element: <a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a>
+
+❌ list - Ensure that lists are structured correctly
+Help: https://dequeuniversity.com/rules/axe/4.10/list?application=axeAPI
+  ▶ Affected Element: <ol>
+
+❌ meta-viewport - Ensure <meta name="viewport"> does not disable text scaling and zooming
+Help: https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI
+  ▶ Affected Element: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+❌ page-has-heading-one - Ensure that the page, or at least one of its frames contains a level-one heading
+Help: https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI
+  ▶ Affected Element: <html lang="en">
+
+❌ region - Ensure all page content is contained by landmarks
+Help: https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI
+  ▶ Affected Element: <div class="nav-mid">
+  ▶ Affected Element: <span class="new-badge cushion-right-small">NEW</span>
+  ▶ Affected Element: <span class="nav-interact" event="Nav Provider Marketing:Interacted:Plus Corporate">For Corporates</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">For Providers</span>
+  ▶ Affected Element: <span class="u-d-item up-triangle">Security &amp; help</span>
+  ▶ Affected Element: <div class="nav-items">
+  ▶ Affected Element: <div class="c-omni__placeholder">
+  ▶ Affected Element: <ol>
+  ▶ Affected Element: <div class="pure-u-10-24 u-spacer--margin">
+  ▶ Affected Element: <table data-qa-id="seo-establishment-footer-table" class="doctor-footer-seo-table">
+  ▶ Affected Element: <div class="right">
+
